@@ -1,0 +1,1831 @@
+# The proguard configuration file for the following section is D:\Apti Villa\andro pro\app\build\intermediates\aapt_proguard_file\release\processReleaseResources\aapt_rules.txt
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+-keep class androidx.profileinstaller.ProfileInstallReceiver { <init>(); }
+-keep class androidx.room.MultiInstanceInvalidationService { <init>(); }
+-keep class androidx.startup.InitializationProvider { <init>(); }
+-keep class app.apti.villa.AptiVillaApp { <init>(); }
+-keep class app.apti.villa.MainActivity { <init>(); }
+
+# End of content from D:\Apti Villa\andro pro\app\build\intermediates\aapt_proguard_file\release\processReleaseResources\aapt_rules.txt
+# The proguard configuration file for the following section is D:\Apti Villa\andro pro\app\build\intermediates\default_proguard_files\global\proguard-android-optimize.txt-8.7.3
+# This is a configuration file for ProGuard.
+# http://proguard.sourceforge.net/index.html#manual/usage.html
+#
+# Starting with version 2.2 of the Android plugin for Gradle, this file is distributed together with
+# the plugin and unpacked at build-time. The files in $ANDROID_HOME are no longer maintained and
+# will be ignored by new version of the Android plugin for Gradle.
+
+# Optimizations: If you don't want to optimize, use the proguard-android.txt configuration file
+# instead of this one, which turns off the optimization flags.
+-allowaccessmodification
+
+# Preserve some attributes that may be required for reflection.
+-keepattributes AnnotationDefault,
+                EnclosingMethod,
+                InnerClasses,
+                RuntimeVisibleAnnotations,
+                RuntimeVisibleParameterAnnotations,
+                RuntimeVisibleTypeAnnotations,
+                Signature
+
+-keep public class com.google.vending.licensing.ILicensingService
+-keep public class com.android.vending.licensing.ILicensingService
+-keep public class com.google.android.vending.licensing.ILicensingService
+-dontnote com.android.vending.licensing.ILicensingService
+-dontnote com.google.vending.licensing.ILicensingService
+-dontnote com.google.android.vending.licensing.ILicensingService
+
+# For native methods, see https://www.guardsquare.com/manual/configuration/examples#native
+-keepclasseswithmembernames,includedescriptorclasses class * {
+    native <methods>;
+}
+
+# Keep setters in Views so that animations can still work.
+-keepclassmembers public class * extends android.view.View {
+    void set*(***);
+    *** get*();
+}
+
+# We want to keep methods in Activity that could be used in the XML attribute onClick.
+-keepclassmembers class * extends android.app.Activity {
+    public void *(android.view.View);
+}
+
+# For enumeration classes, see https://www.guardsquare.com/manual/configuration/examples#enumerations
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keepclassmembers class * implements android.os.Parcelable {
+    public static final ** CREATOR;
+}
+
+# Preserve annotated Javascript interface methods.
+-keepclassmembers class * {
+    @android.webkit.JavascriptInterface <methods>;
+}
+
+# The support libraries contains references to newer platform versions.
+# Don't warn about those in case this app is linking against an older
+# platform version. We know about them, and they are safe.
+-dontnote android.support.**
+-dontnote androidx.**
+-dontwarn android.support.**
+-dontwarn androidx.**
+
+# Understand the @Keep support annotation.
+-keep class android.support.annotation.Keep
+
+-keep @android.support.annotation.Keep class * {*;}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <fields>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <init>(...);
+}
+
+# These classes are duplicated between android.jar and org.apache.http.legacy.jar.
+-dontnote org.apache.http.**
+-dontnote android.net.http.**
+
+# These classes are duplicated between android.jar and core-lambda-stubs.jar.
+-dontnote java.lang.invoke.**
+
+# End of content from D:\Apti Villa\andro pro\app\build\intermediates\default_proguard_files\global\proguard-android-optimize.txt-8.7.3
+# The proguard configuration file for the following section is D:\Apti Villa\andro pro\app\proguard-rules.pro
+# Add project specific ProGuard rules here.
+
+# Keep serialization classes
+-keepattributes *Annotation*, InnerClasses, Signature
+-dontnote kotlinx.serialization.AnnotationsKt
+
+-keepclassmembers class kotlinx.serialization.json.** {
+    *** Companion;
+}
+-keepclasseswithmembers class kotlinx.serialization.json.** {
+    kotlinx.serialization.KSerializer serializer(...);
+}
+-keepclassmembers class * {
+    @kotlinx.serialization.Serializable <fields>;
+}
+-keep @kotlinx.serialization.Serializable class * { *; }
+
+# Keep Room entities and DAOs
+-keep class app.apti.villa.data.local.entity.** { *; }
+-keep class app.apti.villa.data.local.dao.** { *; }
+-keep class * extends androidx.room.RoomDatabase
+
+# Keep Domain models
+-keep class app.apti.villa.domain.model.** { *; }
+
+# Keep Hilt generated classes
+-keep class dagger.hilt.** { *; }
+-keep class * extends dagger.hilt.android.internal.managers.ViewComponentManager$FragmentContextWrapper { *; }
+
+# OkHttp & Okio
+-dontwarn okhttp3.**
+-dontwarn okio.**
+-dontwarn javax.annotation.**
+-dontwarn org.conscrypt.**
+
+# Google Tink
+-dontwarn com.google.crypto.tink.**
+
+
+# End of content from D:\Apti Villa\andro pro\app\proguard-rules.pro
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\862245b12d33e80784221b318310a8db\transformed\hilt-android-2.54\proguard.txt
+# Keep for the reflective cast done in EntryPoints.
+# See b/183070411#comment4 for more info.
+-keep,allowobfuscation,allowshrinking @dagger.hilt.EntryPoint class *# Keep for the reflective cast done in EntryPoints.
+# See b/183070411#comment4 for more info.
+-keep,allowobfuscation,allowshrinking @dagger.hilt.android.EarlyEntryPoint class *# Keep for the reflective cast done in EntryPoints.
+# See b/183070411#comment4 for more info.
+-keep,allowobfuscation,allowshrinking @dagger.hilt.internal.ComponentEntryPoint class *
+-keep,allowobfuscation,allowshrinking @dagger.hilt.internal.GeneratedEntryPoint class *
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\862245b12d33e80784221b318310a8db\transformed\hilt-android-2.54\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\af9c2e7f7109c9ab814f4065b709644e\transformed\navigation-runtime-release\proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\af9c2e7f7109c9ab814f4065b709644e\transformed\navigation-runtime-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\415ea4141bc15ddd292b3d305c671642\transformed\navigation-common-release\proguard.txt
+# Copyright (C) 2019 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# NavArgsLazy creates NavArgs instances using reflection
+-if public class ** implements androidx.navigation.NavArgs
+-keepclassmembers public class <1> {
+    ** fromBundle(android.os.Bundle);
+}
+
+# Retain the @Navigator.Name annotation on each subclass of Navigator.
+# R8 full mode only retains annotations on items matched by a -keep rule,
+# hence the extra -keep rule for the subclasses of Navigator.
+#
+# A -keep rule for the Navigator.Name annotation class is not required
+# since the annotation is referenced from the code.
+-keepattributes RuntimeVisibleAnnotations
+-keep,allowobfuscation,allowshrinking class * extends androidx.navigation.Navigator
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\415ea4141bc15ddd292b3d305c671642\transformed\navigation-common-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\bc98039a7d667c7e26b689b63e96df56\transformed\navigation-compose-release\proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\bc98039a7d667c7e26b689b63e96df56\transformed\navigation-compose-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\0c6c9c883d5a5604b89ecad0a0dd0753\transformed\fragment-1.5.1\proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# The default FragmentFactory creates Fragment instances using reflection
+-if public class ** extends androidx.fragment.app.Fragment
+-keepclasseswithmembers,allowobfuscation public class <1> {
+    public <init>();
+}
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\0c6c9c883d5a5604b89ecad0a0dd0753\transformed\fragment-1.5.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\e317bbad10734125e19a50803170dc28\transformed\room-runtime-release\proguard.txt
+-keep class * extends androidx.room.RoomDatabase { void <init>(); }
+-dontwarn androidx.room.paging.**
+-dontwarn androidx.lifecycle.LiveData
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\e317bbad10734125e19a50803170dc28\transformed\room-runtime-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\db7bc696f6e8a20da41580d7a7a2c084\transformed\room-ktx-2.7.1\proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\db7bc696f6e8a20da41580d7a7a2c084\transformed\room-ktx-2.7.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\bb2fcdb0cdeb6f4d973b0092dfc62c13\transformed\room-paging-release\proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\bb2fcdb0cdeb6f4d973b0092dfc62c13\transformed\room-paging-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\7c3bef3fcf9f8c87aeb24a78331f399c\transformed\recyclerview-1.2.1\proguard.txt
+# Copyright (C) 2015 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# When layoutManager xml attribute is used, RecyclerView inflates
+#LayoutManagers' constructors using reflection.
+-keep public class * extends androidx.recyclerview.widget.RecyclerView$LayoutManager {
+    public <init>(android.content.Context, android.util.AttributeSet, int, int);
+    public <init>();
+}
+
+-keepclassmembers class androidx.recyclerview.widget.RecyclerView {
+    public void suppressLayout(boolean);
+    public boolean isLayoutSuppressed();
+}
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\7c3bef3fcf9f8c87aeb24a78331f399c\transformed\recyclerview-1.2.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\f05ce62da02585de11db31013887b192\transformed\animation-core-release\proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Keep all the functions created to throw an exception. We don't want these functions to be
+# inlined in any way, which R8 will do by default. The whole point of these functions is to
+# reduce the amount of code generated at the call site.
+-keepclassmembers,allowshrinking,allowobfuscation class androidx.compose.**.* {
+    static void throw*Exception(...);
+    static void throw*ExceptionForNullCheck(...);
+    # For methods returning Nothing
+    static java.lang.Void throw*Exception(...);
+    static java.lang.Void throw*ExceptionForNullCheck(...);
+}
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\f05ce62da02585de11db31013887b192\transformed\animation-core-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\6836392d1a9b57c6357f24bfa8a4f241\transformed\material-ripple-release\proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\6836392d1a9b57c6357f24bfa8a4f241\transformed\material-ripple-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\4ed0fc3017493bbabcb9ae9921de50ba\transformed\animation-release\proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\4ed0fc3017493bbabcb9ae9921de50ba\transformed\animation-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\b88f546eac1e0346025274f78a30479f\transformed\foundation-layout-release\proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Keep all the functions created to throw an exception. We don't want these functions to be
+# inlined in any way, which R8 will do by default. The whole point of these functions is to
+# reduce the amount of code generated at the call site.
+-keepclassmembers,allowshrinking,allowobfuscation class androidx.compose.**.* {
+    static void throw*Exception(...);
+    static void throw*ExceptionForNullCheck(...);
+    # For methods returning Nothing
+    static java.lang.Void throw*Exception(...);
+    static java.lang.Void throw*ExceptionForNullCheck(...);
+}
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\b88f546eac1e0346025274f78a30479f\transformed\foundation-layout-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\775b0ac59f5575f4701bd9ed9b383b02\transformed\foundation-release\proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Keep all the functions created to throw an exception. We don't want these functions to be
+# inlined in any way, which R8 will do by default. The whole point of these functions is to
+# reduce the amount of code generated at the call site.
+-keepclassmembers,allowshrinking,allowobfuscation class androidx.compose.**.* {
+    static void throw*Exception(...);
+    # For methods returning Nothing
+    static java.lang.Void throw*Exception(...);
+}
+
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\775b0ac59f5575f4701bd9ed9b383b02\transformed\foundation-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\306284215bc6fe65157905bb11b3b72c\transformed\ui-unit-release\proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Keep all the functions created to throw an exception. We don't want these functions to be
+# inlined in any way, which R8 will do by default. The whole point of these functions is to
+# reduce the amount of code generated at the call site.
+-keepclassmembers,allowshrinking,allowobfuscation class androidx.compose.**.* {
+    static void throw*Exception(...);
+    static void throw*ExceptionForNullCheck(...);
+    # For methods returning Nothing
+    static java.lang.Void throw*Exception(...);
+    static java.lang.Void throw*ExceptionForNullCheck(...);
+}
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\306284215bc6fe65157905bb11b3b72c\transformed\ui-unit-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\6aaf8827aed24dafba781dec9c3d2e2a\transformed\ui-geometry-release\proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\6aaf8827aed24dafba781dec9c3d2e2a\transformed\ui-geometry-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\55b464b541562b48d12d48f2c80dfde2\transformed\ui-util-release\proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Keep all the functions created to throw an exception. We don't want these functions to be
+# inlined in any way, which R8 will do by default. The whole point of these functions is to
+# reduce the amount of code generated at the call site.
+-keepclassmembers,allowshrinking,allowobfuscation class androidx.compose.**.* {
+    static void throw*Exception(...);
+    static void throw*ExceptionForNullCheck(...);
+    # For methods returning Nothing
+    static java.lang.Void throw*Exception(...);
+    static java.lang.Void throw*ExceptionForNullCheck(...);
+}
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\55b464b541562b48d12d48f2c80dfde2\transformed\ui-util-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\82748cc66c9a1e98e6ee06a36da03c7a\transformed\ui-text-release\proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Keep all the functions created to throw an exception. We don't want these functions to be
+# inlined in any way, which R8 will do by default. The whole point of these functions is to
+# reduce the amount of code generated at the call site.
+-keepclassmembers,allowshrinking,allowobfuscation class androidx.compose.**.* {
+    static void throw*Exception(...);
+    static void throw*ExceptionForNullCheck(...);
+    # For methods returning Nothing
+    static java.lang.Void throw*Exception(...);
+    static java.lang.Void throw*ExceptionForNullCheck(...);
+}
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\82748cc66c9a1e98e6ee06a36da03c7a\transformed\ui-text-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\d07b2cb0ac63705d842565bb6e715074\transformed\ui-tooling-preview-release\proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\d07b2cb0ac63705d842565bb6e715074\transformed\ui-tooling-preview-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\4968a61498875a11c1ed380c4b0f3a33\transformed\ui-graphics-release\proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Keep all the functions created to throw an exception. We don't want these functions to be
+# inlined in any way, which R8 will do by default. The whole point of these functions is to
+# reduce the amount of code generated at the call site.
+-keepclassmembers,allowshrinking,allowobfuscation class androidx.compose.**.* {
+    static void throw*Exception(...);
+    static void throw*ExceptionForNullCheck(...);
+    # For methods returning Nothing
+    static java.lang.Void throw*Exception(...);
+    static java.lang.Void throw*ExceptionForNullCheck(...);
+}
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\4968a61498875a11c1ed380c4b0f3a33\transformed\ui-graphics-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\e5656980e26ecfcccf26f1fc9731af75\transformed\graphics-path-1.0.1\proguard.txt
+-keepclasseswithmembers class androidx.graphics.path.** {
+    native <methods>;
+}
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\e5656980e26ecfcccf26f1fc9731af75\transformed\graphics-path-1.0.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\78e3b72bb449665df3bb70ad2949ee0a\transformed\core-1.16.0\proguard.txt
+# Never inline methods, but allow shrinking and obfuscation.
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.ViewCompat$Api* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.WindowInsetsCompat$*Impl* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.app.NotificationCompat$*$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.os.UserHandleCompat$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.widget.EdgeEffectCompat$Api*Impl {
+  <methods>;
+}
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\78e3b72bb449665df3bb70ad2949ee0a\transformed\core-1.16.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\664843adf2105dd34c1ce9ce931e2a7e\transformed\lifecycle-process-2.9.0\proguard.txt
+# this rule is need to work properly when app is compiled with api 28, see b/142778206
+-keepclassmembers class * extends androidx.lifecycle.EmptyActivityLifecycleCallbacks { *; }
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\664843adf2105dd34c1ce9ce931e2a7e\transformed\lifecycle-process-2.9.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\dedf99bc9f48a2bbc84ebf6e2ecfd44b\transformed\lifecycle-livedata-core-ktx-2.9.0\proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\dedf99bc9f48a2bbc84ebf6e2ecfd44b\transformed\lifecycle-livedata-core-ktx-2.9.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\74e8ac9b16f101e4a67f004d8b8a4383\transformed\lifecycle-livedata-2.9.0\proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\74e8ac9b16f101e4a67f004d8b8a4383\transformed\lifecycle-livedata-2.9.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\7e40f2067d381a89f3b95645c890d56e\transformed\lifecycle-runtime-release\proguard.txt
+-keepattributes AnnotationDefault,
+                RuntimeVisibleAnnotations,
+                RuntimeVisibleParameterAnnotations,
+                RuntimeVisibleTypeAnnotations
+
+-keepclassmembers enum androidx.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep class * implements androidx.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @androidx.lifecycle.OnLifecycleEvent *;
+}
+
+# The deprecated `android.app.Fragment` creates `Fragment` instances using reflection.
+# See: b/338958225, b/341537875
+-keepclasseswithmembers,allowobfuscation public class androidx.lifecycle.ReportFragment {
+    public <init>();
+}
+
+# this rule is need to work properly when app is compiled with api 28, see b/142778206
+# Also this rule prevents registerIn from being inlined.
+-keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\7e40f2067d381a89f3b95645c890d56e\transformed\lifecycle-runtime-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\9f09d82a5e7adbf1886d82f3689f8013\transformed\lifecycle-viewmodel-release\proguard.txt
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
+    <init>();
+}
+
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
+    <init>(android.app.Application);
+}
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\9f09d82a5e7adbf1886d82f3689f8013\transformed\lifecycle-viewmodel-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\0b3a0f5291f3630a3151fca3d32a2eb1\transformed\lifecycle-viewmodel-savedstate-release\proguard.txt
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
+    <init>(androidx.lifecycle.SavedStateHandle);
+}
+
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
+    <init>(android.app.Application,androidx.lifecycle.SavedStateHandle);
+}
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\0b3a0f5291f3630a3151fca3d32a2eb1\transformed\lifecycle-viewmodel-savedstate-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\8ed2f5eb115e2d6c2d5a6044ef95649f\transformed\savedstate-ktx-1.3.0\proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\8ed2f5eb115e2d6c2d5a6044ef95649f\transformed\savedstate-ktx-1.3.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\56d176df1cb9791cb853b25118246be0\transformed\savedstate-compose-release\proguard.txt
+# Workaround for https://issuetracker.google.com/issues/346808608
+#
+# `androidx.savedstate.compose.LocalSavedStateRegistryOwner` will reflectively lookup for
+# `androidx.compose.ui.platform.LocalSavedStateRegistryOwner` to ensure backward compatibility
+# when using SavedState >= 1.3 with Compose <= 1.7.
+#
+# We need to keep the getter if the code using this is included.
+#
+# We need to suppress `ShrinkerUnresolvedReference` because the `LocalComposition` is in a
+# different module.
+#
+#noinspection ShrinkerUnresolvedReference
+-if public class androidx.compose.ui.platform.AndroidCompositionLocals_androidKt {
+    public static *** getLocalSavedStateRegistryOwner();
+}
+-keep public class androidx.compose.ui.platform.AndroidCompositionLocals_androidKt {
+    public static *** getLocalSavedStateRegistryOwner();
+}
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\56d176df1cb9791cb853b25118246be0\transformed\savedstate-compose-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\1e59fd1dab83e4d09a4a3f1612ba6c7c\transformed\savedstate-release\proguard.txt
+# Copyright (C) 2019 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+-keepclassmembers,allowobfuscation class * implements androidx.savedstate.SavedStateRegistry$AutoRecreated {
+    <init>();
+}
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\1e59fd1dab83e4d09a4a3f1612ba6c7c\transformed\savedstate-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\d2b46fde6a1dd7ab81907986dbf0ca3e\transformed\rules\lib\META-INF\proguard\androidx-lifecycle-lifecycle-common-java8.pro
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\d2b46fde6a1dd7ab81907986dbf0ca3e\transformed\rules\lib\META-INF\proguard\androidx-lifecycle-lifecycle-common-java8.pro
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\b3bc20b649a6138fdc18bdd87594511b\transformed\lifecycle-livedata-core-2.9.0\proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\b3bc20b649a6138fdc18bdd87594511b\transformed\lifecycle-livedata-core-2.9.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\bddd7cf3749b1e2a3f39dfae8bdb9849\transformed\lifecycle-viewmodel-ktx-2.9.0\proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\bddd7cf3749b1e2a3f39dfae8bdb9849\transformed\lifecycle-viewmodel-ktx-2.9.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\a6ccdea332186bf3ed70445387ee1ee9\transformed\lifecycle-livedata-ktx-2.9.0\proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\a6ccdea332186bf3ed70445387ee1ee9\transformed\lifecycle-livedata-ktx-2.9.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\e0d5b6d3062de519312d38b407fe7a66\transformed\lifecycle-runtime-compose-release\proguard.txt
+# Workaround for https://issuetracker.google.com/issues/346808608
+#
+# `androidx.lifecycle.compose.LocalLifecycleOwner` will reflectively lookup for
+# `androidx.compose.ui.platform.LocalLifecycleOwner` to ensure backward compatibility
+# when using Lifecycle 2.8+ with Compose 1.6.
+#
+# We need to keep the getter if the code using this is included.
+#
+# We need to suppress `ShrinkerUnresolvedReference` because the `LocalComposition` is in a
+# different module.
+#
+#noinspection ShrinkerUnresolvedReference
+-if public class androidx.compose.ui.platform.AndroidCompositionLocals_androidKt {
+    public static *** getLocalLifecycleOwner();
+}
+-keep public class androidx.compose.ui.platform.AndroidCompositionLocals_androidKt {
+    public static *** getLocalLifecycleOwner();
+}
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\e0d5b6d3062de519312d38b407fe7a66\transformed\lifecycle-runtime-compose-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\d658d1db67fe76f51bd9c821c21a1a3b\transformed\lifecycle-viewmodel-compose-release\proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\d658d1db67fe76f51bd9c821c21a1a3b\transformed\lifecycle-viewmodel-compose-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\55c708fd4b53d43829372040df87c8cd\transformed\ui-release\proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# We supply these as stubs and are able to link to them at runtime
+# because they are hidden public classes in Android. We don't want
+# R8 to complain about them not being there during optimization.
+-dontwarn android.view.RenderNode
+-dontwarn android.view.DisplayListCanvas
+-dontwarn android.view.HardwareCanvas
+
+-keepclassmembers class androidx.compose.ui.platform.ViewLayerContainer {
+    protected void dispatchGetDisplayList();
+}
+
+-keepclassmembers class androidx.compose.ui.platform.AndroidComposeView {
+    android.view.View findViewByAccessibilityIdTraversal(int);
+}
+
+# Users can create Modifier.Node instances that implement multiple Modifier.Node interfaces,
+# so we cannot tell whether two modifier.node instances are of the same type without using
+# reflection to determine the class type. See b/265188224 for more context.
+-keep,allowshrinking class * extends androidx.compose.ui.node.ModifierNodeElement
+
+# Keep all the functions created to throw an exception. We don't want these functions to be
+# inlined in any way, which R8 will do by default. The whole point of these functions is to
+# reduce the amount of code generated at the call site.
+-keepclassmembers,allowshrinking,allowobfuscation class androidx.compose.**.* {
+    static void throw*Exception(...);
+    static void throw*ExceptionForNullCheck(...);
+    # For methods returning Nothing
+    static java.lang.Void throw*Exception(...);
+    static java.lang.Void throw*ExceptionForNullCheck(...);
+    # For functions generating error messages
+    static java.lang.String exceptionMessage*(...);
+    java.lang.String exceptionMessage*(...);
+}
+
+# When pointer input modifier nodes are added dynamically and have the same keys (common when
+# developers `Unit` for their keys), we need a way to differentiate them and using a
+# functional interface and comparing classes allows us to do that.
+-keepnames class androidx.compose.ui.input.pointer.PointerInputEventHandler {
+    *;
+}
+
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\55c708fd4b53d43829372040df87c8cd\transformed\ui-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\6b3fc110c9e1e95b8129882a4b03b222\transformed\core-ktx-1.16.0\proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\6b3fc110c9e1e95b8129882a4b03b222\transformed\core-ktx-1.16.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\33a51f17a376c26d59d0fefa7f4fa05c\transformed\rules\lib\META-INF\proguard\androidx.datastore_datastore-preferences-core.pro
+-keepclassmembers class * extends androidx.datastore.preferences.protobuf.GeneratedMessageLite {
+    <fields>;
+}
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\33a51f17a376c26d59d0fefa7f4fa05c\transformed\rules\lib\META-INF\proguard\androidx.datastore_datastore-preferences-core.pro
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\bb68b7c085c8e0f56e5ce8da2f9178b7\transformed\rules\lib\META-INF\com.android.tools\r8\kotlinx-serialization-common.pro
+# Keep `Companion` object fields of serializable classes.
+# This avoids serializer lookup through `getDeclaredClasses` as done for named companion objects.
+-if @kotlinx.serialization.Serializable class **
+-keepclassmembers class <1> {
+    static <1>$Companion Companion;
+}
+
+# Keep `serializer()` on companion objects (both default and named) of serializable classes.
+-if @kotlinx.serialization.Serializable class ** {
+    static **$* *;
+}
+-keepclassmembers class <2>$<3> {
+    kotlinx.serialization.KSerializer serializer(...);
+}
+
+# Keep `INSTANCE.serializer()` of serializable objects.
+-if @kotlinx.serialization.Serializable class ** {
+    public static ** INSTANCE;
+}
+-keepclassmembers class <1> {
+    public static <1> INSTANCE;
+    kotlinx.serialization.KSerializer serializer(...);
+}
+
+# @Serializable and @Polymorphic are used at runtime for polymorphic serialization.
+-keepattributes RuntimeVisibleAnnotations,AnnotationDefault
+
+# Don't print notes about potential mistakes or omissions in the configuration for kotlinx-serialization classes
+# See also https://github.com/Kotlin/kotlinx.serialization/issues/1900
+-dontnote kotlinx.serialization.**
+
+# Serialization core uses `java.lang.ClassValue` for caching inside these specified classes.
+# If there is no `java.lang.ClassValue` (for example, in Android), then R8/ProGuard will print a warning.
+# However, since in this case they will not be used, we can disable these warnings
+-dontwarn kotlinx.serialization.internal.ClassValueReferences
+
+# disable optimisation for descriptor field because in some versions of ProGuard, optimization generates incorrect bytecode that causes a verification error
+# see https://github.com/Kotlin/kotlinx.serialization/issues/2719
+-keepclassmembers public class **$$serializer {
+    private ** descriptor;
+}
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\bb68b7c085c8e0f56e5ce8da2f9178b7\transformed\rules\lib\META-INF\com.android.tools\r8\kotlinx-serialization-common.pro
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\bb68b7c085c8e0f56e5ce8da2f9178b7\transformed\rules\lib\META-INF\com.android.tools\r8\kotlinx-serialization-r8.pro
+# Rule to save runtime annotations on serializable class.
+# If the R8 full mode is used, annotations are removed from classes-files.
+#
+# For the annotation serializer, it is necessary to read the `Serializable` annotation inside the serializer<T>() function - if it is present,
+# then `SealedClassSerializer` is used, if absent, then `PolymorphicSerializer'.
+#
+# When using R8 full mode, all interfaces will be serialized using `PolymorphicSerializer`.
+#
+# see https://github.com/Kotlin/kotlinx.serialization/issues/2050
+
+ -if @kotlinx.serialization.Serializable class **
+ -keep, allowshrinking, allowoptimization, allowobfuscation, allowaccessmodification class <1>
+
+
+# Rule to save INSTANCE field and serializer function for Kotlin serializable objects.
+#
+# R8 full mode works differently if the instance is not explicitly accessed in the code.
+#
+# see https://github.com/Kotlin/kotlinx.serialization/issues/2861
+# see https://issuetracker.google.com/issues/379996140
+
+-keepclassmembers @kotlinx.serialization.Serializable class ** {
+    public static ** INSTANCE;
+    kotlinx.serialization.KSerializer serializer(...);
+}
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\bb68b7c085c8e0f56e5ce8da2f9178b7\transformed\rules\lib\META-INF\com.android.tools\r8\kotlinx-serialization-r8.pro
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\f911a7d7f41f253f7f7bf5d164222460\transformed\runtime-saveable-release\proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\f911a7d7f41f253f7f7bf5d164222460\transformed\runtime-saveable-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\b3743cbfe1c0c014ee1be14bcccf66b1\transformed\runtime-release\proguard.txt
+-assumenosideeffects public class androidx.compose.runtime.ComposerKt {
+    void sourceInformation(androidx.compose.runtime.Composer,java.lang.String);
+    void sourceInformationMarkerStart(androidx.compose.runtime.Composer,int,java.lang.String);
+    void sourceInformationMarkerEnd(androidx.compose.runtime.Composer);
+}
+
+# Composer's class initializer doesn't do anything but create an EMPTY object. Marking the
+# initializers as having no side effects can help encourage shrinkers to merge/devirtualize Composer
+# with ComposerImpl.
+-assumenosideeffects public class androidx.compose.runtime.Composer {
+    void <clinit>();
+}
+-assumenosideeffects public class androidx.compose.runtime.ComposerImpl {
+    void <clinit>();
+}
+
+# Keep all the functions created to throw an exception. We don't want these functions to be
+# inlined in any way, which R8 will do by default. The whole point of these functions is to
+# reduce the amount of code generated at the call site.
+-keepclassmembers,allowshrinking,allowobfuscation class androidx.compose.runtime.** {
+    # java.lang.Void == methods that return Nothing
+    static void throw*Exception(...);
+    static void throw*ExceptionForNullCheck(...);
+    static java.lang.Void throw*Exception(...);
+    static java.lang.Void throw*ExceptionForNullCheck(...);
+
+    # For functions generating error messages
+    static java.lang.String exceptionMessage*(...);
+    java.lang.String exceptionMessage*(...);
+
+    static void compose*RuntimeError(...);
+    static java.lang.Void compose*RuntimeError(...);
+}
+
+
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\b3743cbfe1c0c014ee1be14bcccf66b1\transformed\runtime-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\10ffde02fd956a38832e5adb33a32a06\transformed\core-viewtree-1.0.0\proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\10ffde02fd956a38832e5adb33a32a06\transformed\core-viewtree-1.0.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\59292251b4ab7a3ae3a4ef8d3f79dd22\transformed\sqlite-framework-release\proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\59292251b4ab7a3ae3a4ef8d3f79dd22\transformed\sqlite-framework-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\900139db342b6203284136bb2332a3e4\transformed\sqlite-release\proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\900139db342b6203284136bb2332a3e4\transformed\sqlite-release\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\a18ac8fecf362bc2347f98ca371f4f28\transformed\rules\lib\META-INF\proguard\okhttp3.pro
+# JSR 305 annotations are for embedding nullability information.
+-dontwarn javax.annotation.**
+
+# A resource is loaded with a relative path so the package of this class must be preserved.
+-keepnames class okhttp3.internal.publicsuffix.PublicSuffixDatabase
+
+# Animal Sniffer compileOnly dependency to ensure APIs are compatible with older versions of Java.
+-dontwarn org.codehaus.mojo.animal_sniffer.*
+
+# OkHttp platform used only on JVM and when Conscrypt and other security providers are available.
+-dontwarn okhttp3.internal.platform.**
+-dontwarn org.conscrypt.**
+-dontwarn org.bouncycastle.**
+-dontwarn org.openjsse.**
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\a18ac8fecf362bc2347f98ca371f4f28\transformed\rules\lib\META-INF\proguard\okhttp3.pro
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\e193e73cfa1ec76bdc62c4d839a36896\transformed\rules\lib\META-INF\com.android.tools\r8\coroutines.pro
+# When editing this file, update the following files as well:
+# - META-INF/proguard/coroutines.pro
+# - META-INF/com.android.tools/proguard/coroutines.pro
+
+# Most of volatile fields are updated with AFU and should not be mangled
+-keepclassmembers class kotlinx.coroutines.** {
+    volatile <fields>;
+}
+
+# Same story for the standard library's SafeContinuation that also uses AtomicReferenceFieldUpdater
+-keepclassmembers class kotlin.coroutines.SafeContinuation {
+    volatile <fields>;
+}
+
+# These classes are only required by kotlinx.coroutines.debug.AgentPremain, which is only loaded when
+# kotlinx-coroutines-core is used as a Java agent, so these are not needed in contexts where ProGuard is used.
+-dontwarn java.lang.instrument.ClassFileTransformer
+-dontwarn sun.misc.SignalHandler
+-dontwarn java.lang.instrument.Instrumentation
+-dontwarn sun.misc.Signal
+
+# Only used in `kotlinx.coroutines.internal.ExceptionsConstructor`.
+# The case when it is not available is hidden in a `try`-`catch`, as well as a check for Android.
+-dontwarn java.lang.ClassValue
+
+# An annotation used for build tooling, won't be directly accessed.
+-dontwarn org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\e193e73cfa1ec76bdc62c4d839a36896\transformed\rules\lib\META-INF\com.android.tools\r8\coroutines.pro
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\61bd2b8181c06a5f85bc83b283dd7f98\transformed\rules\lib\META-INF\com.android.tools\r8-from-1.6.0\coroutines.pro
+# Allow R8 to optimize away the FastServiceLoader.
+# Together with ServiceLoader optimization in R8
+# this results in direct instantiation when loading Dispatchers.Main
+-assumenosideeffects class kotlinx.coroutines.internal.MainDispatcherLoader {
+    boolean FAST_SERVICE_LOADER_ENABLED return false;
+}
+
+-assumenosideeffects class kotlinx.coroutines.internal.FastServiceLoaderKt {
+    boolean ANDROID_DETECTED return true;
+}
+
+# Disable support for "Missing Main Dispatcher", since we always have Android main dispatcher
+-assumenosideeffects class kotlinx.coroutines.internal.MainDispatchersKt {
+    boolean SUPPORT_MISSING return false;
+}
+
+# Statically turn off all debugging facilities and assertions
+-assumenosideeffects class kotlinx.coroutines.DebugKt {
+    boolean getASSERTIONS_ENABLED() return false;
+    boolean getDEBUG() return false;
+    boolean getRECOVER_STACK_TRACES() return false;
+}
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\61bd2b8181c06a5f85bc83b283dd7f98\transformed\rules\lib\META-INF\com.android.tools\r8-from-1.6.0\coroutines.pro
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\8246f7a39c8feddbb9b5bb4b1a8cbaee\transformed\versionedparcelable-1.1.1\proguard.txt
+-keep class * implements androidx.versionedparcelable.VersionedParcelable
+-keep public class android.support.**Parcelizer { *; }
+-keep public class androidx.**Parcelizer { *; }
+-keep public class androidx.versionedparcelable.ParcelImpl
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\8246f7a39c8feddbb9b5bb4b1a8cbaee\transformed\versionedparcelable-1.1.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\8137f52d511d6dd026daa749696c6895\transformed\rules\lib\META-INF\proguard\androidx-collection-collection-ktx.pro
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\8137f52d511d6dd026daa749696c6895\transformed\rules\lib\META-INF\proguard\androidx-collection-collection-ktx.pro
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\9924c5338ce14fc2191b862e5ea62031\transformed\rules\lib\META-INF\proguard\protobuf.pro
+# Recently Protobuf Javalite introduced a change that relies on reflection,
+# which doesn't work with Proguard. This rule keeps the reflection usages in
+# (shaded) Protobuf classes in Tink as-is.
+# The location of this file is determined by
+# - https://developer.android.com/studio/build/shrink-code#configuration-files
+# - https://docs.bazel.build/versions/master/be/java.html#java_library.resources
+# See also:
+# - https://github.com/google/tink/issues/361
+# - https://github.com/protocolbuffers/protobuf/issues/6463
+# WARNING: the shaded package name com.google.crypto.tink.shaded.protobuf must
+# be kept in sync with jar_jar_rules.txt.
+-keepclassmembers class * extends com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite {
+  <fields>;
+}
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\9924c5338ce14fc2191b862e5ea62031\transformed\rules\lib\META-INF\proguard\protobuf.pro
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\a6d275cbdc8aa8b757e4b01d68626296\transformed\startup-runtime-1.1.1\proguard.txt
+# It's important that we preserve initializer names, given they are used in the AndroidManifest.xml.
+-keepnames class * extends androidx.startup.Initializer
+
+# These Proguard rules ensures that ComponentInitializers are are neither shrunk nor obfuscated,
+# and are a part of the primary dex file. This is because they are discovered and instantiated
+# during application startup.
+-keep class * extends androidx.startup.Initializer {
+    # Keep the public no-argument constructor while allowing other methods to be optimized.
+    <init>();
+}
+
+-assumenosideeffects class androidx.startup.StartupLogger { public static <methods>; }
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\a6d275cbdc8aa8b757e4b01d68626296\transformed\startup-runtime-1.1.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\742a80b547ff1453bc2cb7b745c50e2c\transformed\rules\lib\META-INF\proguard\androidx-annotations.pro
+-keep,allowobfuscation @interface androidx.annotation.Keep
+-keep @androidx.annotation.Keep class * {*;}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <fields>;
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <init>(...);
+}
+
+-keepclassmembers,allowobfuscation class * {
+  @androidx.annotation.DoNotInline <methods>;
+}
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\742a80b547ff1453bc2cb7b745c50e2c\transformed\rules\lib\META-INF\proguard\androidx-annotations.pro
+# The proguard configuration file for the following section is C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\c5b1ace4c6c44cf7a7da701228c582d1\transformed\rules\lib\META-INF\com.android.tools\r8\r8.pro
+-identifiernamestring @dagger.internal.IdentifierNameString class ** {
+    static java.lang.String *;
+}
+
+# End of content from C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\c5b1ace4c6c44cf7a7da701228c582d1\transformed\rules\lib\META-INF\com.android.tools\r8\r8.pro
+# The proguard configuration file for the following section is D:\Apti Villa\andro pro\app\build\intermediates\generated_proguard_file\release\mergeReleaseGeneratedProguardFiles\proguard.txt
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.DataManagementViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.DataManagementViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.DataManagementViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.DataManagementViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.DataManagementViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.SettingsViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.DataManagementViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.DataManagementViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.SettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.SettingsViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.DataManagementViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.DataManagementViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.SettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.SettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.ExamViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.DataManagementViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.DataManagementViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.SettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.SettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.ExamViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.ExamViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.DataManagementViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.DataManagementViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.SettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.SettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.ExamViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.ExamViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.TestListViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.DataManagementViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.DataManagementViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.SettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.SettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.ExamViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.ExamViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.TestListViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.TestListViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.DataManagementViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.DataManagementViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.SettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.SettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.ExamViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.ExamViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.TestListViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.TestListViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.TestResultViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.DataManagementViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.DataManagementViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.SettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.SettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.ExamViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.ExamViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.TestListViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.TestListViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.TestResultViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.TestResultViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.DataManagementViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.DataManagementViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.SettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.SettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.ExamViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.ExamViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.TestListViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.TestListViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.TestResultViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.TestResultViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.TestReviewViewModel
+
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.home.HomeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.importer.ImportViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.inventory.InventoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.onboarding.OnboardingViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.practice.PracticeViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.profile.ProfileViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.question.QuestionViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.review.ReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.search.SearchViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.DataManagementViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.DataManagementViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.SettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.settings.SettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.ExamViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.ExamViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.TestListViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.TestListViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.TestResultViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.TestResultViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.TestReviewViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.test.TestReviewViewModel
+
+# End of content from D:\Apti Villa\andro pro\app\build\intermediates\generated_proguard_file\release\mergeReleaseGeneratedProguardFiles\proguard.txt
+# The proguard configuration file for the following section is <unknown>
+
+# End of content from <unknown>

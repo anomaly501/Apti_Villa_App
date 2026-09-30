@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.apti.villa.domain.engine.test.ScorerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-30T05:05:08" hostname="LAPTOP-PSVQO0ND" time="0.007">
+  <properties/>
+  <testcase name="calculateScore counts marked for review questions" classname="app.apti.villa.domain.engine.test.ScorerTest" time="0.006"/>
+  <testcase name="calculateScore with zero attempts yields zero score and zero accuracy without division by zero" classname="app.apti.villa.domain.engine.test.ScorerTest" time="0.001"/>
+  <testcase name="calculateScore correctly computes positive and negative marks with accuracy" classname="app.apti.villa.domain.engine.test.ScorerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

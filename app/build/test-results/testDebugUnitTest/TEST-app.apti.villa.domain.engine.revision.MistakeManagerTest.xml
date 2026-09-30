@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.apti.villa.domain.engine.revision.MistakeManagerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-30T05:05:08" hostname="LAPTOP-PSVQO0ND" time="0.008">
+  <properties/>
+  <testcase name="recordRetryResult with correct answer increments consecutive correct and resolves after 2 consecutive" classname="app.apti.villa.domain.engine.revision.MistakeManagerTest" time="0.007"/>
+  <testcase name="recordRetryResult with wrong answer resets consecutive correct and increments count" classname="app.apti.villa.domain.engine.revision.MistakeManagerTest" time="0.0"/>
+  <testcase name="recordWrongAnswer updates existing mistake, increments count, and resets consecutiveCorrect" classname="app.apti.villa.domain.engine.revision.MistakeManagerTest" time="0.0"/>
+  <testcase name="recordWrongAnswer creates active mistake with wrongCount 1 when no previous mistake exists" classname="app.apti.villa.domain.engine.revision.MistakeManagerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

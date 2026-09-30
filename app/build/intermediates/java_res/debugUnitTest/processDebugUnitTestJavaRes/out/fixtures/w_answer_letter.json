@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "source_metadata": {
+    "title": "Letter Mapped Quiz",
+    "topic": "General"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is the capital of India?",
+      "options": ["Mumbai", "Kolkata", "New Delhi", "Chennai"],
+      "correct_answer": "C"
+    }
+  ]
+}

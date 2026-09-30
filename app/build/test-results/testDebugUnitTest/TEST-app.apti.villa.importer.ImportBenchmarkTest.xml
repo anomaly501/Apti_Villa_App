@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.apti.villa.importer.ImportBenchmarkTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-09-30T05:05:08" hostname="LAPTOP-PSVQO0ND" time="0.37">
+  <properties/>
+  <testcase name="benchmark parsing and validating 2000 questions takes less than 3000 ms" classname="app.apti.villa.importer.ImportBenchmarkTest" time="0.37"/>
+  <system-out><![CDATA[Time to parse and validate 2,000 questions: 329 ms
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

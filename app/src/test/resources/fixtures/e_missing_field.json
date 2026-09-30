@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_metadata": {
+    "topic": "Algebra"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "options": ["A", "B"],
+      "correct_answer": "A"
+    }
+  ]
+}

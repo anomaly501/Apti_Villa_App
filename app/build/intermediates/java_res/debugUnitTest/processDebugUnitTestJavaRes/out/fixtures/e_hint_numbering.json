@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "source_metadata": {
+    "title": "Bad Hint Numbers",
+    "topic": "Math"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Non-contiguous hints",
+      "options": ["A", "B"],
+      "correct_answer": "A",
+      "hints": [
+        { "hint_number": 1, "title": "H1", "description": "Desc 1" },
+        { "hint_number": 3, "title": "H3", "description": "Desc 3" }
+      ]
+    }
+  ]
+}

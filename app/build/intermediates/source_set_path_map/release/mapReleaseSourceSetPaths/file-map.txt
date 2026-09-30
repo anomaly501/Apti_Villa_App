@@ -1,0 +1,71 @@
+app.apti.villa.app-lifecycle-viewmodel-savedstate-release-0 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\0b3a0f5291f3630a3151fca3d32a2eb1\transformed\lifecycle-viewmodel-savedstate-release\res
+app.apti.villa.app-fragment-1.5.1-1 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\0c6c9c883d5a5604b89ecad0a0dd0753\transformed\fragment-1.5.1\res
+app.apti.villa.app-core-viewtree-1.0.0-2 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\10ffde02fd956a38832e5adb33a32a06\transformed\core-viewtree-1.0.0\res
+app.apti.villa.app-savedstate-release-3 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\1e59fd1dab83e4d09a4a3f1612ba6c7c\transformed\savedstate-release\res
+app.apti.villa.app-paging-compose-release-4 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\23af32fffc06e06b122f161bb0d947d7\transformed\paging-compose-release\res
+app.apti.villa.app-material-icons-core-release-5 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\2ca8f21cd6fbd0d60ff4f5e7d7db6618\transformed\material-icons-core-release\res
+app.apti.villa.app-ui-unit-release-6 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\306284215bc6fe65157905bb11b3b72c\transformed\ui-unit-release\res
+app.apti.villa.app-hilt-navigation-compose-1.2.0-7 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\3d35127d450bd63e8159e45c2f5e95c0\transformed\hilt-navigation-compose-1.2.0\res
+app.apti.villa.app-navigation-common-release-8 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\415ea4141bc15ddd292b3d305c671642\transformed\navigation-common-release\res
+app.apti.villa.app-material3-release-9 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\4325d9f570b0778f36bbefa7fe9f4bf5\transformed\material3-release\res
+app.apti.villa.app-activity-ktx-1.10.1-10 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\449ad70b481a4c50600250b98dcf004f\transformed\activity-ktx-1.10.1\res
+app.apti.villa.app-ui-graphics-release-11 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\4968a61498875a11c1ed380c4b0f3a33\transformed\ui-graphics-release\res
+app.apti.villa.app-animation-release-12 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\4ed0fc3017493bbabcb9ae9921de50ba\transformed\animation-release\res
+app.apti.villa.app-material-icons-extended-release-13 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\53e7903ec9855af65d686a01acf3dbb2\transformed\material-icons-extended-release\res
+app.apti.villa.app-ui-util-release-14 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\55b464b541562b48d12d48f2c80dfde2\transformed\ui-util-release\res
+app.apti.villa.app-ui-release-15 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\55c708fd4b53d43829372040df87c8cd\transformed\ui-release\res
+app.apti.villa.app-savedstate-compose-release-16 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\56d176df1cb9791cb853b25118246be0\transformed\savedstate-compose-release\res
+app.apti.villa.app-sqlite-framework-release-17 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\59292251b4ab7a3ae3a4ef8d3f79dd22\transformed\sqlite-framework-release\res
+app.apti.villa.app-hilt-navigation-1.2.0-18 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\5b2265c23c92018c33602997824446e2\transformed\hilt-navigation-1.2.0\res
+app.apti.villa.app-lifecycle-process-2.9.0-19 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\664843adf2105dd34c1ce9ce931e2a7e\transformed\lifecycle-process-2.9.0\res
+app.apti.villa.app-material-ripple-release-20 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\6836392d1a9b57c6357f24bfa8a4f241\transformed\material-ripple-release\res
+app.apti.villa.app-ui-geometry-release-21 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\6aaf8827aed24dafba781dec9c3d2e2a\transformed\ui-geometry-release\res
+app.apti.villa.app-core-ktx-1.16.0-22 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\6b3fc110c9e1e95b8129882a4b03b222\transformed\core-ktx-1.16.0\res
+app.apti.villa.app-lifecycle-livedata-2.9.0-23 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\74e8ac9b16f101e4a67f004d8b8a4383\transformed\lifecycle-livedata-2.9.0\res
+app.apti.villa.app-foundation-release-24 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\775b0ac59f5575f4701bd9ed9b383b02\transformed\foundation-release\res
+app.apti.villa.app-core-1.16.0-25 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\78e3b72bb449665df3bb70ad2949ee0a\transformed\core-1.16.0\res
+app.apti.villa.app-activity-1.10.1-26 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\7a99293cd4d797b7f92d51d8c3dbe24d\transformed\activity-1.10.1\res
+app.apti.villa.app-recyclerview-1.2.1-27 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\7c3bef3fcf9f8c87aeb24a78331f399c\transformed\recyclerview-1.2.1\res
+app.apti.villa.app-lifecycle-runtime-release-28 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\7e40f2067d381a89f3b95645c890d56e\transformed\lifecycle-runtime-release\res
+app.apti.villa.app-ui-text-release-29 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\82748cc66c9a1e98e6ee06a36da03c7a\transformed\ui-text-release\res
+app.apti.villa.app-customview-poolingcontainer-1.0.0-30 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\8c2ca214ed3e68c69411a21ee02caa43\transformed\customview-poolingcontainer-1.0.0\res
+app.apti.villa.app-savedstate-ktx-1.3.0-31 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\8ed2f5eb115e2d6c2d5a6044ef95649f\transformed\savedstate-ktx-1.3.0\res
+app.apti.villa.app-sqlite-release-32 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\900139db342b6203284136bb2332a3e4\transformed\sqlite-release\res
+app.apti.villa.app-tracing-1.2.0-33 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\93ceb804f037ce8f63273e92880d1076\transformed\tracing-1.2.0\res
+app.apti.villa.app-lifecycle-viewmodel-release-34 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\9f09d82a5e7adbf1886d82f3689f8013\transformed\lifecycle-viewmodel-release\res
+app.apti.villa.app-lifecycle-livedata-ktx-2.9.0-35 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\a6ccdea332186bf3ed70445387ee1ee9\transformed\lifecycle-livedata-ktx-2.9.0\res
+app.apti.villa.app-startup-runtime-1.1.1-36 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\a6d275cbdc8aa8b757e4b01d68626296\transformed\startup-runtime-1.1.1\res
+app.apti.villa.app-datastore-preferences-release-37 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\a931cf198d64ea2e7d283b41a2e36478\transformed\datastore-preferences-release\res
+app.apti.villa.app-core-runtime-2.2.0-38 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\abeb9b8da8617a70db4a995f69f2fc3f\transformed\core-runtime-2.2.0\res
+app.apti.villa.app-navigation-runtime-release-39 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\af9c2e7f7109c9ab814f4065b709644e\transformed\navigation-runtime-release\res
+app.apti.villa.app-datastore-release-40 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\b096af75c84cace106c829cd545f7160\transformed\datastore-release\res
+app.apti.villa.app-runtime-release-41 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\b3743cbfe1c0c014ee1be14bcccf66b1\transformed\runtime-release\res
+app.apti.villa.app-lifecycle-livedata-core-2.9.0-42 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\b3bc20b649a6138fdc18bdd87594511b\transformed\lifecycle-livedata-core-2.9.0\res
+app.apti.villa.app-paging-runtime-3.3.6-43 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\b62a42c6170a3806987284f436e0be7e\transformed\paging-runtime-3.3.6\res
+app.apti.villa.app-foundation-layout-release-44 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\b88f546eac1e0346025274f78a30479f\transformed\foundation-layout-release\res
+app.apti.villa.app-annotation-experimental-1.4.1-45 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\baa776a0119c7453559b8d07678cc111\transformed\annotation-experimental-1.4.1\res
+app.apti.villa.app-room-paging-release-46 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\bb2fcdb0cdeb6f4d973b0092dfc62c13\transformed\room-paging-release\res
+app.apti.villa.app-paging-common-release-47 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\bbd8d80afbf25714f200dcb4bad0d8cd\transformed\paging-common-release\res
+app.apti.villa.app-navigation-compose-release-48 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\bc98039a7d667c7e26b689b63e96df56\transformed\navigation-compose-release\res
+app.apti.villa.app-lifecycle-viewmodel-ktx-2.9.0-49 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\bddd7cf3749b1e2a3f39dfae8bdb9849\transformed\lifecycle-viewmodel-ktx-2.9.0\res
+app.apti.villa.app-ui-tooling-preview-release-50 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\d07b2cb0ac63705d842565bb6e715074\transformed\ui-tooling-preview-release\res
+app.apti.villa.app-lifecycle-viewmodel-compose-release-51 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\d658d1db67fe76f51bd9c821c21a1a3b\transformed\lifecycle-viewmodel-compose-release\res
+app.apti.villa.app-emoji2-1.4.0-52 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\d80517a3665598be57e964d11f441917\transformed\emoji2-1.4.0\res
+app.apti.villa.app-room-ktx-2.7.1-53 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\db7bc696f6e8a20da41580d7a7a2c084\transformed\room-ktx-2.7.1\res
+app.apti.villa.app-datastore-core-release-54 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\de7c9b4f1c2757955404332abd0937b6\transformed\datastore-core-release\res
+app.apti.villa.app-lifecycle-livedata-core-ktx-2.9.0-55 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\dedf99bc9f48a2bbc84ebf6e2ecfd44b\transformed\lifecycle-livedata-core-ktx-2.9.0\res
+app.apti.villa.app-lifecycle-runtime-compose-release-56 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\e0d5b6d3062de519312d38b407fe7a66\transformed\lifecycle-runtime-compose-release\res
+app.apti.villa.app-room-runtime-release-57 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\e317bbad10734125e19a50803170dc28\transformed\room-runtime-release\res
+app.apti.villa.app-graphics-path-1.0.1-58 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\e5656980e26ecfcccf26f1fc9731af75\transformed\graphics-path-1.0.1\res
+app.apti.villa.app-activity-compose-1.10.1-59 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\ef66b987f04137af700ac949901a4a31\transformed\activity-compose-1.10.1\res
+app.apti.villa.app-animation-core-release-60 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\f05ce62da02585de11db31013887b192\transformed\animation-core-release\res
+app.apti.villa.app-profileinstaller-1.4.0-61 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\f3114f6ca89c2447eea607ce6ad68cd3\transformed\profileinstaller-1.4.0\res
+app.apti.villa.app-runtime-saveable-release-62 C:\Users\Aman Kumar\.gradle\caches\8.11.1\transforms\f911a7d7f41f253f7f7bf5d164222460\transformed\runtime-saveable-release\res
+app.apti.villa.app-pngs-63 D:\Apti Villa\andro pro\app\build\generated\res\pngs\release
+app.apti.villa.app-resValues-64 D:\Apti Villa\andro pro\app\build\generated\res\resValues\release
+app.apti.villa.app-packageReleaseResources-65 D:\Apti Villa\andro pro\app\build\intermediates\incremental\release\packageReleaseResources\merged.dir
+app.apti.villa.app-packageReleaseResources-66 D:\Apti Villa\andro pro\app\build\intermediates\incremental\release\packageReleaseResources\stripped.dir
+app.apti.villa.app-merged-not-compiled-resources-67 D:\Apti Villa\andro pro\app\build\intermediates\merged-not-compiled-resources\release
+app.apti.villa.app-release-68 D:\Apti Villa\andro pro\app\build\intermediates\merged_res\release\mergeReleaseResources
+app.apti.villa.app-main-69 D:\Apti Villa\andro pro\app\src\main\res
+app.apti.villa.app-release-70 D:\Apti Villa\andro pro\app\src\release\res

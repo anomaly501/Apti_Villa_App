@@ -1,0 +1,9 @@
+-keep class j$.time.LocalDate {
+  public j$.time.LocalDate minusDays(long);
+  public static j$.time.LocalDate now();
+  public static j$.time.LocalDate parse(java.lang.CharSequence);
+  public java.lang.String toString();
+}
+-keep class j$.util.DesugarTimeZone {
+  public static java.util.TimeZone getTimeZone(java.lang.String);
+}

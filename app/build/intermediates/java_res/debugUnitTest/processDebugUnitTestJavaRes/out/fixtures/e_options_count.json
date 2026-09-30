@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "source_metadata": {
+    "title": "Invalid Option Count",
+    "topic": "Math"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Only one option?",
+      "options": ["Single Option"],
+      "correct_answer": "Single Option"
+    }
+  ]
+}

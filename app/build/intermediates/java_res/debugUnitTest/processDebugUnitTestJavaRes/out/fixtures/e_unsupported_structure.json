@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "source_metadata": {
+    "title": "LaTeX Content",
+    "topic": "Math"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is \\frac{1}{2} + \\sqrt{4}?",
+      "options": ["2.5", "3.0"],
+      "correct_answer": "2.5"
+    }
+  ]
+}

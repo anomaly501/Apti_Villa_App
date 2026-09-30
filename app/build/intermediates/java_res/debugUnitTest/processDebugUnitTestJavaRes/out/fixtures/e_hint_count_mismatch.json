@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "source_metadata": {
+    "title": "Hint Count Mismatch",
+    "topic": "Math"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Count mismatch",
+      "options": ["A", "B"],
+      "correct_answer": "A",
+      "hint_count": 5,
+      "hints": [
+        { "hint_number": 1, "title": "H1", "description": "Desc 1" }
+      ]
+    }
+  ]
+}

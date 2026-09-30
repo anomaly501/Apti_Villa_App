@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.apti.villa.domain.engine.test.TestTimerPolicyTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-30T05:05:08" hostname="LAPTOP-PSVQO0ND" time="0.003">
+  <properties/>
+  <testcase name="calculateRemainingSeconds returns null for untimed tests" classname="app.apti.villa.domain.engine.test.TestTimerPolicyTest" time="0.002"/>
+  <testcase name="calculateRemainingSeconds computes remaining time and stops at zero" classname="app.apti.villa.domain.engine.test.TestTimerPolicyTest" time="0.0"/>
+  <testcase name="isExpired accurately triggers on time expiry" classname="app.apti.villa.domain.engine.test.TestTimerPolicyTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

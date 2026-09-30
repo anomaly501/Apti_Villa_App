@@ -1,0 +1,9 @@
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiChatViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiHistoryViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.ai.AiSettingsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.analytics.AnalyticsViewModel
+-keep,allowobfuscation,allowshrinking class app.apti.villa.feature.backup.BackupViewModel

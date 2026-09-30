@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.apti.villa.domain.engine.search.SearchQuerySanitizerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-30T05:05:08" hostname="LAPTOP-PSVQO0ND" time="0.006">
+  <properties/>
+  <testcase name="sanitizeForFts with empty or blank string returns empty string" classname="app.apti.villa.domain.engine.search.SearchQuerySanitizerTest" time="0.003"/>
+  <testcase name="sanitizeForFts removes FTS special characters and colons" classname="app.apti.villa.domain.engine.search.SearchQuerySanitizerTest" time="0.002"/>
+  <testcase name="sanitizeForFts with single word adds prefix wildcard" classname="app.apti.villa.domain.engine.search.SearchQuerySanitizerTest" time="0.0"/>
+  <testcase name="sanitizeForFts with multiple words adds wildcard to each token" classname="app.apti.villa.domain.engine.search.SearchQuerySanitizerTest" time="0.001"/>
+  <testcase name="sanitizeForFts correctly preserves Devanagari Hindi unicode characters" classname="app.apti.villa.domain.engine.search.SearchQuerySanitizerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

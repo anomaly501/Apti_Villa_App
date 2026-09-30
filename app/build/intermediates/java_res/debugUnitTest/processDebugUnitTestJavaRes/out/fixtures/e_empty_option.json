@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "source_metadata": {
+    "title": "Empty Option",
+    "topic": "Math"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "One is blank",
+      "options": ["Valid Option", "   "],
+      "correct_answer": "Valid Option"
+    }
+  ]
+}

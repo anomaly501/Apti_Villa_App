@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.apti.villa.domain.engine.hint.HintLadderTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-30T05:05:08" hostname="LAPTOP-PSVQO0ND" time="0.004">
+  <properties/>
+  <testcase name="isHintUnlocked returns true for unlocked hints and false for locked" classname="app.apti.villa.domain.engine.hint.HintLadderTest" time="0.003"/>
+  <testcase name="calculateSolvedAtHintLevel returns null when answer is revealed" classname="app.apti.villa.domain.engine.hint.HintLadderTest" time="0.0"/>
+  <testcase name="progressive unlock requires unlocking hints strictly in sequence" classname="app.apti.villa.domain.engine.hint.HintLadderTest" time="0.0"/>
+  <testcase name="calculateSolvedAtHintLevel returns opened count when not revealed" classname="app.apti.villa.domain.engine.hint.HintLadderTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

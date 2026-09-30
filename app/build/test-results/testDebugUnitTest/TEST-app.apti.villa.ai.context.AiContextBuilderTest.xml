@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.apti.villa.ai.context.AiContextBuilderTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-30T05:05:05" hostname="LAPTOP-PSVQO0ND" time="0.1">
+  <properties/>
+  <testcase name="only unlocked hints are included in payload" classname="app.apti.villa.ai.context.AiContextBuilderTest" time="0.082"/>
+  <testcase name="when answer gate is closed, correct answer and solutions are strictly omitted" classname="app.apti.villa.ai.context.AiContextBuilderTest" time="0.001"/>
+  <testcase name="buildChatRequest enforces system prompt and message truncation" classname="app.apti.villa.ai.context.AiContextBuilderTest" time="0.01"/>
+  <testcase name="when answer gate is open, correct answer, solution steps, and tricks are included" classname="app.apti.villa.ai.context.AiContextBuilderTest" time="0.004"/>
+  <testcase name="buildPreview returns accurate token estimate and payload" classname="app.apti.villa.ai.context.AiContextBuilderTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

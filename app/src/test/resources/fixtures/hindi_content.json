@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "source_metadata": {
+    "title": "प्रतिशत अभ्यास",
+    "topic": "प्रतिशत",
+    "language": "hi"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "यदि किसी संख्या का 20% 50 है, तो वह संख्या क्या है?",
+      "options": ["200", "250", "300", "150"],
+      "correct_answer": "250",
+      "hints": [
+        {
+          "hint_number": 1,
+          "title": "प्रतिशत सूत्र",
+          "description": "संख्या = (50 / 20) * 100"
+        }
+      ],
+      "solution_steps": [
+        {
+          "step_number": 1,
+          "action": "50 को 20 से भाग दें और 100 से गुणा करें: 2.5 * 100 = 250"
+        }
+      ]
+    }
+  ]
+}

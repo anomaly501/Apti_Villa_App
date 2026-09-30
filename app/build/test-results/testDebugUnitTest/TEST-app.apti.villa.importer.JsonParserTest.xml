@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.apti.villa.importer.JsonParserTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-30T05:05:08" hostname="LAPTOP-PSVQO0ND" time="0.166">
+  <properties/>
+  <testcase name="parse valid json succeeds" classname="app.apti.villa.importer.JsonParserTest" time="0.001"/>
+  <testcase name="parse malformed json reports line and column" classname="app.apti.villa.importer.JsonParserTest" time="0.026"/>
+  <testcase name="parse non-object root returns wrong type error" classname="app.apti.villa.importer.JsonParserTest" time="0.139"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

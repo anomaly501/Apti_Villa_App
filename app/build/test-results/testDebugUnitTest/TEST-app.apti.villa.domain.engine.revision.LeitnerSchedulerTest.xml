@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.apti.villa.domain.engine.revision.LeitnerSchedulerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-30T05:05:08" hostname="LAPTOP-PSVQO0ND" time="0.006">
+  <properties/>
+  <testcase name="interval days match standard Leitner schedule" classname="app.apti.villa.domain.engine.revision.LeitnerSchedulerTest" time="0.002"/>
+  <testcase name="demote resets item to box 0 and due immediately" classname="app.apti.villa.domain.engine.revision.LeitnerSchedulerTest" time="0.002"/>
+  <testcase name="interval days for out of range box clamps to 0 or 5" classname="app.apti.villa.domain.engine.revision.LeitnerSchedulerTest" time="0.001"/>
+  <testcase name="isDue returns true when now is equal to or past dueAt" classname="app.apti.villa.domain.engine.revision.LeitnerSchedulerTest" time="0.001"/>
+  <testcase name="promote increases box up to 5 and sets due date based on interval" classname="app.apti.villa.domain.engine.revision.LeitnerSchedulerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

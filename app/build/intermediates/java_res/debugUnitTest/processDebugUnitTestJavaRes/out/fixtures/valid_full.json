@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "source_metadata": {
+    "title": "Percentage Masterclass",
+    "topic": "Percentage",
+    "sub_topic": "Profit & Loss",
+    "subject": "Quantitative Aptitude",
+    "exam": "SSC CGL",
+    "source_type": "YOUTUBE",
+    "source_url": "https://youtube.com/watch?v=abcdef12345",
+    "channel": "AptiMaster",
+    "language": "en"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "question_text": "If cost price is Rs 100 and selling price is Rs 125, what is the profit percentage?",
+      "options": ["20%", "25%", "30%", "15%"],
+      "correct_answer": "25%",
+      "timestamp": "05:30",
+      "category": "Profit & Loss",
+      "difficulty": "medium",
+      "hint_count": 2,
+      "hints": [
+        {
+          "hint_number": 1,
+          "title": "Profit formula",
+          "description": "Profit = Selling Price - Cost Price"
+        },
+        {
+          "hint_number": 2,
+          "title": "Percentage calculation",
+          "description": "Profit% = (Profit / Cost Price) * 100"
+        }
+      ],
+      "tricks": [
+        {
+          "trick_name": "Direct Base Ratio",
+          "description": "Difference is 25 over base 100, which is directly 25%."
+        }
+      ],
+      "solution_steps": [
+        {
+          "step_number": 1,
+          "action": "Calculate profit: 125 - 100 = 25"
+        },
+        {
+          "step_number": 2,
+          "action": "Divide by CP and multiply by 100: (25 / 100) * 100 = 25%"
+        }
+      ],
+      "subject": "Quantitative Aptitude",
+      "exam": "SSC CGL"
+    }
+  ]
+}

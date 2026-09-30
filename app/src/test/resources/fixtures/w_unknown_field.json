@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "extra_root_field": "ignore me",
+  "source_metadata": {
+    "title": "Extra Fields Quiz",
+    "topic": "General",
+    "extra_meta": "ignore me too"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Question with extra fields",
+      "options": ["A", "B"],
+      "correct_answer": "A",
+      "extra_question_field": "ignore me 3"
+    }
+  ]
+}

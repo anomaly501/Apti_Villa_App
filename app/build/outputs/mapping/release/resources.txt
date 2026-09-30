@@ -1,0 +1,1200 @@
+Marking id:view_tree_view_model_store_owner:2131165277 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:view_tree_saved_state_registry_owner:2131165276 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:view_tree_on_back_pressed_dispatcher_owner:2131165275 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:m3c_bottom_sheet_collapse_description:2131427444 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:m3c_bottom_sheet_dismiss_description:2131427445 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:m3c_bottom_sheet_expand_description:2131427447 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:default_error_message:2131427419 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_0:2131165185 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_1:2131165186 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_2:2131165197 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_3:2131165208 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_4:2131165211 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_5:2131165212 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_6:2131165213 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_7:2131165214 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_8:2131165215 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_9:2131165216 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_10:2131165187 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_11:2131165188 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_12:2131165189 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_13:2131165190 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_14:2131165191 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_15:2131165192 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_16:2131165193 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_17:2131165194 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_18:2131165195 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_19:2131165196 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_20:2131165198 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_21:2131165199 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_22:2131165200 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_23:2131165201 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_24:2131165202 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_25:2131165203 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_26:2131165204 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_27:2131165205 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_28:2131165206 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_29:2131165207 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_30:2131165209 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_31:2131165210 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:androidx_startup:2131427361 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:data_confirm_wipe_message:2131427413 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:tag_unhandled_key_listeners:2131165267 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:onboarding_skip:2131427519 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:onboarding_get_started:2131427514 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:view_tree_disjoint_parent:2131165273 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking style:EdgeToEdgeFloatingDialogWindowTheme:2131492866 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:compose_view_saveable_id_tag:2131165226 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:backup_export_json_title:2131427369 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:backup_export_json_desc:2131427368 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_provider_label:2131427353 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_history_section:2131427348 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:profile_daily_goal:2131427535 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:onboarding_questions_per_day:2131427518 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:onboarding_minutes_per_day:2131427515 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:profile_target_exams:2131427544 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking style:DialogWindowTheme:2131492864 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking style:FloatingDialogWindowTheme:2131492868 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:onboarding_name_hint:2131427516 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:onboarding_name_label:2131427517 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:privacy_no_tracking_title:2131427528 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:privacy_no_tracking_desc:2131427527 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:privacy_sandbox_title:2131427532 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:privacy_sandbox_desc:2131427531 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:privacy_ownership_title:2131427530 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:privacy_ownership_desc:2131427529 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:privacy_byok_ai_title:2131427525 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:privacy_byok_ai_desc:2131427524 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:privacy_hero_desc:2131427526 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_api_key_hint:2131427328 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_chat_title:2131427341 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:inspection_slot_table_set:2131165238 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:pooling_container_listener_holder_tag:2131165249 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:autofill:2131427363 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:tag_on_apply_window_listener:2131165259 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:tag_window_insets_animation_callback:2131165268 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:settings_backup:2131427556 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:settings_backup_desc:2131427557 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:settings_data:2131427558 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:settings_data_desc:2131427559 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_test_key_btn:2131427359 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:profile_questions_goal:2131427540 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:profile_minutes_goal:2131427537 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:privacy_badge_100_offline:2131427523 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:cd_navigate_back:2131427397 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:privacy_screen_title:2131427533 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_chat_empty_title:2131427331 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_chat_quick_prompt_wrong:2131427340 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_chat_quick_prompt_step:2131427339 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_chat_quick_prompt_hint:2131427337 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_chat_quick_prompt_beginner:2131427336 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_chat_quick_prompt_shortcut:2131427338 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:default_popup_window_title:2131427420 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:cd_settings:2131427400 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:profile:2131427534 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:profile_name:2131427538 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:profile_edit:2131427536 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:m3c_bottom_sheet_pane_title:2131427448 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:close_sheet:2131427402 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:androidx_compose_ui_view_composition_context:2131165222 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:onboarding_welcome:2131427521 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:onboarding_subtitle:2131427520 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:onboarding_exams_label:2131427513 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:onboarding_daily_goal_label:2131427512 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:tag_compat_insets_dispatch:2131165258 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:profile_save:2131427541 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:cancel:2131427394 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:wrapped_composition_tag:2131165279 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:tag_screen_reader_focusable:2131165262 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:tag_accessibility_heading:2131165256 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:tag_accessibility_pane_title:2131165257 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:tag_state_description:2131165263 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:tag_accessibility_clickable_spans:2131165255 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_action_clickable_span:2131165184 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:tag_accessibility_actions:2131165254 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:backup_preview_dialog_title:2131427381 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:backup_screen_title:2131427385 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:backup_mode_merge_title:2131427377 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:backup_mode_merge_desc:2131427376 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:backup_mode_replace_title:2131427379 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:backup_mode_replace_desc:2131427378 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_chat_no_key_warning:2131427332 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:settings_privacy:2131427562 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:settings_privacy_desc:2131427563 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_settings_title:2131427358 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_settings_desc:2131427357 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:consume_window_insets_tag:2131165227 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:tab_mistakes:2131427583 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:tab_revision:2131427584 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:tab_bookmarks:2131427582 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:backup_import_desc:2131427374 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:tag_unhandled_key_event_manager:2131165266 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:backup_restore_action_btn:2131427383 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:backup_select_file_btn:2131427386 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:backup_export_tests_btn:2131427373 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:backup_export_questions_btn:2131427370 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:backup_export_full_btn:2131427365 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:tab:2131427581 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:switch_role:2131427580 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_chat_preview_desc:2131427334 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:settings:2131427552 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:data_clear_history_desc:2131427407 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:data_clear_history_title:2131427408 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:data_confirm_wipe_title:2131427414 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:data_clear_mistakes_desc:2131427410 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:data_clear_mistakes_title:2131427411 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:data_screen_title:2131427415 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:cd_profile:2131427398 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:cd_search:2131427399 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:data_wipe_title:2131427418 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:data_wipe_desc:2131427417 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:hide_in_inspector_tag:2131165234 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:save:2131427549 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_delete_key_btn:2131427343 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_disclosure_title:2131427345 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_disclosure_text:2131427344 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_view_history_btn:2131427360 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ok:2131427511 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_chat_configure_btn:2131427330 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:is_pooling_container_tag:2131165239 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:settings_sound_effects:2131427569 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:settings_sound_effects_desc:2131427570 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:settings_haptic_feedback:2131427560 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:settings_haptic_feedback_desc:2131427561 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:settings_theme:2131427571 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:settings_theme_system:2131427574 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:settings_theme_light:2131427573 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:settings_theme_dark:2131427572 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:confirm:2131427403 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:data_wipe_btn:2131427416 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:data_clear_mistakes_btn:2131427409 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:data_clear_history_btn:2131427406 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:delete:2131427421 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:nav_home:2131427503 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:nav_practice:2131427504 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:nav_tests:2131427506 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:nav_review:2131427505 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:nav_analytics:2131427502 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_api_key_label:2131427329 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_model_label:2131427352 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_endpoint_label:2131427346 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_history_title:2131427349 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_chat_preview_title:2131427335 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_chat_preview_btn:2131427333 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:hide_graphics_layer_in_inspector_tag:2131165232 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:indeterminate:2131427442 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:state_off:2131427577 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:state_on:2131427578 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:selected:2131427551 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:not_selected:2131427510 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:template_percent:2131427585 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:in_progress:2131427441 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:state_empty:2131427576 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:m3c_snackbar_dismiss:2131427485 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:m3c_bottom_sheet_drag_handle_description:2131427446 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:m3c_dialog:2131427480 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:backup_export_section:2131427371 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:backup_import_section:2131427375 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:settings_section_appearance:2131427565 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:settings_section_preferences:2131427567 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:settings_ai:2131427555 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:settings_section_data:2131427566 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:settings_section_privacy:2131427568 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:settings_section_about:2131427564 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_history_empty:2131427347 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_key_valid:2131427351 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_save_history_title:2131427355 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:ai_save_history_desc:2131427354 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:backup_export_full_title:2131427367 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:backup_export_full_desc:2131427366 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:view_tree_lifecycle_owner:2131165274 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:report_drawn:2131165250 reachable: referenced from D:\Apti Villa\andro pro\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+@anim/fragment_fast_out_extra_slow_in : reachable=false
+@animator/fragment_close_enter : reachable=false
+    @anim/fragment_fast_out_extra_slow_in
+@animator/fragment_close_exit : reachable=false
+    @anim/fragment_fast_out_extra_slow_in
+@animator/fragment_fade_enter : reachable=false
+@animator/fragment_fade_exit : reachable=false
+@animator/fragment_open_enter : reachable=false
+    @anim/fragment_fast_out_extra_slow_in
+@animator/fragment_open_exit : reachable=false
+    @anim/fragment_fast_out_extra_slow_in
+@attr/action : reachable=false
+@attr/alpha : reachable=false
+@attr/argType : reachable=false
+@attr/data : reachable=false
+@attr/dataPattern : reachable=false
+@attr/destination : reachable=false
+@attr/enterAnim : reachable=false
+@attr/exitAnim : reachable=false
+@attr/fastScrollEnabled : reachable=false
+@attr/fastScrollHorizontalThumbDrawable : reachable=false
+@attr/fastScrollHorizontalTrackDrawable : reachable=false
+@attr/fastScrollVerticalThumbDrawable : reachable=false
+@attr/fastScrollVerticalTrackDrawable : reachable=false
+@attr/font : reachable=false
+@attr/fontProviderAuthority : reachable=false
+@attr/fontProviderCerts : reachable=false
+@attr/fontProviderFallbackQuery : reachable=false
+@attr/fontProviderFetchStrategy : reachable=false
+@attr/fontProviderFetchTimeout : reachable=false
+@attr/fontProviderPackage : reachable=false
+@attr/fontProviderQuery : reachable=false
+@attr/fontProviderSystemFontFamily : reachable=false
+@attr/fontStyle : reachable=false
+@attr/fontVariationSettings : reachable=false
+@attr/fontWeight : reachable=false
+@attr/graph : reachable=false
+@attr/lStar : reachable=false
+@attr/launchSingleTop : reachable=false
+@attr/layoutManager : reachable=false
+@attr/mimeType : reachable=false
+@attr/navGraph : reachable=false
+@attr/nestedScrollViewStyle : reachable=false
+@attr/nullable : reachable=false
+@attr/popEnterAnim : reachable=false
+@attr/popExitAnim : reachable=false
+@attr/popUpTo : reachable=false
+@attr/popUpToInclusive : reachable=false
+@attr/popUpToSaveState : reachable=false
+@attr/queryPatterns : reachable=false
+@attr/recyclerViewStyle : reachable=false
+@attr/restoreState : reachable=false
+@attr/reverseLayout : reachable=false
+@attr/route : reachable=false
+@attr/shortcutMatchRequired : reachable=false
+@attr/spanCount : reachable=false
+@attr/stackFromEnd : reachable=false
+@attr/startDestination : reachable=false
+@attr/targetPackage : reachable=false
+@attr/ttcIndex : reachable=false
+@attr/uri : reachable=false
+@color/androidx_core_ripple_material_light : reachable=false
+@color/androidx_core_secondary_text_default_material_light : reachable=false
+@color/call_notification_answer_color : reachable=false
+@color/call_notification_decline_color : reachable=false
+@color/notification_action_color_filter : reachable=false
+    @color/androidx_core_secondary_text_default_material_light
+@color/notification_icon_bg_color : reachable=false
+@color/vector_tint_color : reachable=false
+@color/vector_tint_theme_color : reachable=false
+@dimen/compat_button_inset_horizontal_material : reachable=false
+@dimen/compat_button_inset_vertical_material : reachable=false
+@dimen/compat_button_padding_horizontal_material : reachable=false
+@dimen/compat_button_padding_vertical_material : reachable=false
+@dimen/compat_control_corner_material : reachable=false
+@dimen/compat_notification_large_icon_max_height : reachable=false
+@dimen/compat_notification_large_icon_max_width : reachable=false
+@dimen/fastscroll_default_thickness : reachable=false
+@dimen/fastscroll_margin : reachable=false
+@dimen/fastscroll_minimum_range : reachable=false
+@dimen/item_touch_helper_max_drag_scroll_per_frame : reachable=false
+@dimen/item_touch_helper_swipe_escape_max_velocity : reachable=false
+@dimen/item_touch_helper_swipe_escape_velocity : reachable=false
+@dimen/notification_action_icon_size : reachable=false
+@dimen/notification_action_text_size : reachable=false
+@dimen/notification_big_circle_margin : reachable=false
+@dimen/notification_content_margin_start : reachable=false
+@dimen/notification_large_icon_height : reachable=false
+@dimen/notification_large_icon_width : reachable=false
+@dimen/notification_main_column_padding_top : reachable=false
+@dimen/notification_media_narrow_margin : reachable=false
+@dimen/notification_right_icon_size : reachable=false
+@dimen/notification_right_side_padding_top : reachable=false
+@dimen/notification_small_icon_background_padding : reachable=false
+@dimen/notification_small_icon_size_as_large : reachable=false
+@dimen/notification_subtext_size : reachable=false
+@dimen/notification_top_pad : reachable=false
+@dimen/notification_top_pad_large_text : reachable=false
+@drawable/ic_call_answer : reachable=false
+@drawable/ic_call_answer_low : reachable=false
+@drawable/ic_call_answer_video : reachable=false
+@drawable/ic_call_answer_video_low : reachable=false
+@drawable/ic_call_decline : reachable=false
+@drawable/ic_call_decline_low : reachable=false
+@drawable/ic_launcher_background : reachable=false
+@drawable/ic_launcher_foreground : reachable=false
+@drawable/notification_action_background : reachable=false
+    @color/androidx_core_ripple_material_light
+    @dimen/compat_button_inset_horizontal_material
+    @dimen/compat_button_inset_vertical_material
+    @dimen/compat_control_corner_material
+    @dimen/compat_button_padding_horizontal_material
+    @dimen/compat_button_padding_vertical_material
+@drawable/notification_bg : reachable=false
+    @drawable/notification_bg_normal_pressed
+    @drawable/notification_bg_normal
+@drawable/notification_bg_low : reachable=false
+    @drawable/notification_bg_low_pressed
+    @drawable/notification_bg_low_normal
+@drawable/notification_bg_low_normal : reachable=false
+@drawable/notification_bg_low_pressed : reachable=false
+@drawable/notification_bg_normal : reachable=false
+@drawable/notification_bg_normal_pressed : reachable=false
+@drawable/notification_icon_background : reachable=false
+    @color/notification_icon_bg_color
+@drawable/notification_oversize_large_icon_bg : reachable=false
+@drawable/notification_template_icon_bg : reachable=false
+@drawable/notification_template_icon_low_bg : reachable=false
+@drawable/notification_tile_bg : reachable=false
+    @drawable/notify_panel_notification_icon_bg
+@drawable/notify_panel_notification_icon_bg : reachable=false
+@id/accessibility_action_clickable_span : reachable=true
+@id/accessibility_custom_action_0 : reachable=true
+@id/accessibility_custom_action_1 : reachable=true
+@id/accessibility_custom_action_10 : reachable=true
+@id/accessibility_custom_action_11 : reachable=true
+@id/accessibility_custom_action_12 : reachable=true
+@id/accessibility_custom_action_13 : reachable=true
+@id/accessibility_custom_action_14 : reachable=true
+@id/accessibility_custom_action_15 : reachable=true
+@id/accessibility_custom_action_16 : reachable=true
+@id/accessibility_custom_action_17 : reachable=true
+@id/accessibility_custom_action_18 : reachable=true
+@id/accessibility_custom_action_19 : reachable=true
+@id/accessibility_custom_action_2 : reachable=true
+@id/accessibility_custom_action_20 : reachable=true
+@id/accessibility_custom_action_21 : reachable=true
+@id/accessibility_custom_action_22 : reachable=true
+@id/accessibility_custom_action_23 : reachable=true
+@id/accessibility_custom_action_24 : reachable=true
+@id/accessibility_custom_action_25 : reachable=true
+@id/accessibility_custom_action_26 : reachable=true
+@id/accessibility_custom_action_27 : reachable=true
+@id/accessibility_custom_action_28 : reachable=true
+@id/accessibility_custom_action_29 : reachable=true
+@id/accessibility_custom_action_3 : reachable=true
+@id/accessibility_custom_action_30 : reachable=true
+@id/accessibility_custom_action_31 : reachable=true
+@id/accessibility_custom_action_4 : reachable=true
+@id/accessibility_custom_action_5 : reachable=true
+@id/accessibility_custom_action_6 : reachable=true
+@id/accessibility_custom_action_7 : reachable=true
+@id/accessibility_custom_action_8 : reachable=true
+@id/accessibility_custom_action_9 : reachable=true
+@id/action_container : reachable=false
+@id/action_divider : reachable=false
+@id/action_image : reachable=false
+@id/action_text : reachable=false
+@id/actions : reachable=false
+@id/androidx_compose_ui_view_composition_context : reachable=true
+@id/async : reachable=false
+@id/blocking : reachable=false
+@id/chronometer : reachable=false
+@id/compose_view_saveable_id_tag : reachable=true
+@id/consume_window_insets_tag : reachable=true
+@id/dialog_button : reachable=false
+@id/edit_text_id : reachable=false
+@id/forever : reachable=false
+@id/fragment_container_view_tag : reachable=false
+@id/hide_graphics_layer_in_inspector_tag : reachable=true
+@id/hide_ime_id : reachable=false
+@id/hide_in_inspector_tag : reachable=true
+@id/icon : reachable=false
+@id/icon_group : reachable=false
+@id/info : reachable=false
+@id/inspection_slot_table_set : reachable=true
+@id/is_pooling_container_tag : reachable=true
+@id/italic : reachable=false
+@id/item_touch_helper_previous_elevation : reachable=false
+@id/line1 : reachable=false
+@id/line3 : reachable=false
+@id/nav_controller_view_tag : reachable=false
+@id/normal : reachable=false
+@id/notification_background : reachable=false
+@id/notification_main_column : reachable=false
+@id/notification_main_column_container : reachable=false
+@id/pooling_container_listener_holder_tag : reachable=true
+@id/report_drawn : reachable=true
+@id/right_icon : reachable=false
+@id/right_side : reachable=false
+@id/special_effects_controller_view_tag : reachable=false
+@id/tag_accessibility_actions : reachable=true
+@id/tag_accessibility_clickable_spans : reachable=true
+@id/tag_accessibility_heading : reachable=true
+@id/tag_accessibility_pane_title : reachable=true
+@id/tag_compat_insets_dispatch : reachable=true
+@id/tag_on_apply_window_listener : reachable=true
+@id/tag_on_receive_content_listener : reachable=false
+@id/tag_on_receive_content_mime_types : reachable=false
+@id/tag_screen_reader_focusable : reachable=true
+@id/tag_state_description : reachable=true
+@id/tag_system_bar_state_monitor : reachable=false
+@id/tag_transition_group : reachable=false
+@id/tag_unhandled_key_event_manager : reachable=true
+@id/tag_unhandled_key_listeners : reachable=true
+@id/tag_window_insets_animation_callback : reachable=true
+@id/text : reachable=false
+@id/text2 : reachable=false
+@id/time : reachable=false
+@id/title : reachable=false
+@id/view_tree_disjoint_parent : reachable=true
+@id/view_tree_lifecycle_owner : reachable=true
+@id/view_tree_on_back_pressed_dispatcher_owner : reachable=true
+@id/view_tree_saved_state_registry_owner : reachable=true
+@id/view_tree_view_model_store_owner : reachable=true
+@id/visible_removing_fragment_view_tag : reachable=false
+@id/wrapped_composition_tag : reachable=true
+@integer/m3c_window_layout_in_display_cutout_mode : reachable=false
+@integer/status_bar_notification_info_maxnum : reachable=false
+@layout/custom_dialog : reachable=false
+@layout/ime_base_split_test_activity : reachable=false
+@layout/ime_secondary_split_test_activity : reachable=false
+@layout/notification_action : reachable=false
+    @style/Widget_Compat_NotificationActionContainer
+    @dimen/notification_action_icon_size
+    @style/Widget_Compat_NotificationActionText
+@layout/notification_action_tombstone : reachable=false
+    @style/Widget_Compat_NotificationActionContainer
+    @dimen/notification_action_icon_size
+    @style/Widget_Compat_NotificationActionText
+@layout/notification_template_custom_big : reachable=false
+    @dimen/notification_large_icon_width
+    @dimen/notification_large_icon_height
+    @layout/notification_template_icon_group
+    @dimen/notification_right_side_padding_top
+    @layout/notification_template_part_time
+    @layout/notification_template_part_chronometer
+    @style/TextAppearance_Compat_Notification_Info
+@layout/notification_template_icon_group : reachable=false
+    @dimen/notification_large_icon_width
+    @dimen/notification_large_icon_height
+    @dimen/notification_big_circle_margin
+    @dimen/notification_right_icon_size
+@layout/notification_template_part_chronometer : reachable=false
+    @style/TextAppearance_Compat_Notification_Time
+@layout/notification_template_part_time : reachable=false
+    @style/TextAppearance_Compat_Notification_Time
+@mipmap/ic_launcher : reachable=true
+    @drawable/ic_launcher_background
+    @drawable/ic_launcher_foreground
+@mipmap/ic_launcher_round : reachable=true
+    @drawable/ic_launcher_background
+    @drawable/ic_launcher_foreground
+@string/ai_api_key_hint : reachable=true
+@string/ai_api_key_label : reachable=true
+@string/ai_chat_configure_btn : reachable=true
+@string/ai_chat_empty_title : reachable=true
+@string/ai_chat_no_key_warning : reachable=true
+@string/ai_chat_preview_btn : reachable=true
+@string/ai_chat_preview_desc : reachable=true
+@string/ai_chat_preview_title : reachable=true
+@string/ai_chat_quick_prompt_beginner : reachable=true
+@string/ai_chat_quick_prompt_hint : reachable=true
+@string/ai_chat_quick_prompt_shortcut : reachable=true
+@string/ai_chat_quick_prompt_step : reachable=true
+@string/ai_chat_quick_prompt_wrong : reachable=true
+@string/ai_chat_title : reachable=true
+@string/ai_clear_history_btn : reachable=false
+@string/ai_delete_key_btn : reachable=true
+@string/ai_disclosure_text : reachable=true
+@string/ai_disclosure_title : reachable=true
+@string/ai_endpoint_label : reachable=true
+@string/ai_history_empty : reachable=true
+@string/ai_history_section : reachable=true
+@string/ai_history_title : reachable=true
+@string/ai_key_invalid : reachable=false
+@string/ai_key_valid : reachable=true
+@string/ai_model_label : reachable=true
+@string/ai_provider_label : reachable=true
+@string/ai_save_history_desc : reachable=true
+@string/ai_save_history_title : reachable=true
+@string/ai_save_key_btn : reachable=false
+@string/ai_settings_desc : reachable=true
+@string/ai_settings_title : reachable=true
+@string/ai_test_key_btn : reachable=true
+@string/ai_view_history_btn : reachable=true
+@string/androidx_startup : reachable=true
+@string/app_name : reachable=true
+@string/autofill : reachable=true
+@string/backup_error : reachable=false
+@string/backup_export_full_btn : reachable=true
+@string/backup_export_full_desc : reachable=true
+@string/backup_export_full_title : reachable=true
+@string/backup_export_json_desc : reachable=true
+@string/backup_export_json_title : reachable=true
+@string/backup_export_questions_btn : reachable=true
+@string/backup_export_section : reachable=true
+@string/backup_export_success : reachable=false
+@string/backup_export_tests_btn : reachable=true
+@string/backup_import_desc : reachable=true
+@string/backup_import_section : reachable=true
+@string/backup_mode_merge_desc : reachable=true
+@string/backup_mode_merge_title : reachable=true
+@string/backup_mode_replace_desc : reachable=true
+@string/backup_mode_replace_title : reachable=true
+@string/backup_preview_app_ver : reachable=false
+@string/backup_preview_dialog_title : reachable=true
+@string/backup_preview_schema_ver : reachable=false
+@string/backup_restore_action_btn : reachable=true
+@string/backup_restore_success : reachable=false
+@string/backup_screen_title : reachable=true
+@string/backup_select_file_btn : reachable=true
+@string/call_notification_answer_action : reachable=false
+@string/call_notification_answer_video_action : reachable=false
+@string/call_notification_decline_action : reachable=false
+@string/call_notification_hang_up_action : reachable=false
+@string/call_notification_incoming_text : reachable=false
+@string/call_notification_ongoing_text : reachable=false
+@string/call_notification_screening_text : reachable=false
+@string/cancel : reachable=true
+@string/cd_correct_answer : reachable=false
+@string/cd_incorrect_answer : reachable=false
+@string/cd_navigate_back : reachable=true
+@string/cd_profile : reachable=true
+@string/cd_search : reachable=true
+@string/cd_settings : reachable=true
+@string/close_drawer : reachable=false
+@string/close_sheet : reachable=true
+@string/confirm : reachable=true
+@string/data_action_failed : reachable=false
+@string/data_action_success : reachable=false
+@string/data_clear_history_btn : reachable=true
+@string/data_clear_history_desc : reachable=true
+@string/data_clear_history_title : reachable=true
+@string/data_clear_mistakes_btn : reachable=true
+@string/data_clear_mistakes_desc : reachable=true
+@string/data_clear_mistakes_title : reachable=true
+@string/data_confirm_dialog_title : reachable=false
+@string/data_confirm_wipe_message : reachable=true
+@string/data_confirm_wipe_title : reachable=true
+@string/data_screen_title : reachable=true
+@string/data_wipe_btn : reachable=true
+@string/data_wipe_desc : reachable=true
+@string/data_wipe_title : reachable=true
+@string/default_error_message : reachable=true
+@string/default_popup_window_title : reachable=true
+@string/delete : reachable=true
+@string/dropdown_menu : reachable=false
+@string/empty_state : reachable=false
+@string/error : reachable=false
+@string/home_accuracy : reachable=false
+@string/home_continue_learning : reachable=false
+@string/home_greeting_afternoon : reachable=false
+@string/home_greeting_evening : reachable=false
+@string/home_greeting_morning : reachable=false
+@string/home_import_first_test : reachable=false
+@string/home_import_hint : reachable=false
+@string/home_revision_due : reachable=false
+@string/home_revision_questions : reachable=false
+@string/home_start_practice : reachable=false
+@string/home_streak : reachable=false
+@string/home_streak_days : reachable=false
+@string/home_study_time : reachable=false
+@string/home_today_progress : reachable=false
+@string/home_weak_topics : reachable=false
+@string/home_whats_json_format : reachable=false
+@string/in_progress : reachable=true
+@string/indeterminate : reachable=true
+@string/loading : reachable=false
+@string/m3c_bottom_sheet_collapse_description : reachable=true
+@string/m3c_bottom_sheet_dismiss_description : reachable=true
+@string/m3c_bottom_sheet_drag_handle_description : reachable=true
+@string/m3c_bottom_sheet_expand_description : reachable=true
+@string/m3c_bottom_sheet_pane_title : reachable=true
+@string/m3c_date_input_headline : reachable=false
+@string/m3c_date_input_headline_description : reachable=false
+@string/m3c_date_input_invalid_for_pattern : reachable=false
+@string/m3c_date_input_invalid_not_allowed : reachable=false
+@string/m3c_date_input_invalid_year_range : reachable=false
+@string/m3c_date_input_label : reachable=false
+@string/m3c_date_input_no_input_description : reachable=false
+@string/m3c_date_input_title : reachable=false
+@string/m3c_date_picker_headline : reachable=false
+@string/m3c_date_picker_headline_description : reachable=false
+@string/m3c_date_picker_navigate_to_year_description : reachable=false
+@string/m3c_date_picker_no_selection_description : reachable=false
+@string/m3c_date_picker_scroll_to_earlier_years : reachable=false
+@string/m3c_date_picker_scroll_to_later_years : reachable=false
+@string/m3c_date_picker_switch_to_calendar_mode : reachable=false
+@string/m3c_date_picker_switch_to_day_selection : reachable=false
+@string/m3c_date_picker_switch_to_input_mode : reachable=false
+@string/m3c_date_picker_switch_to_next_month : reachable=false
+@string/m3c_date_picker_switch_to_previous_month : reachable=false
+@string/m3c_date_picker_switch_to_year_selection : reachable=false
+@string/m3c_date_picker_title : reachable=false
+@string/m3c_date_picker_today_description : reachable=false
+@string/m3c_date_picker_year_picker_pane_title : reachable=false
+@string/m3c_date_range_input_invalid_range_input : reachable=false
+@string/m3c_date_range_input_title : reachable=false
+@string/m3c_date_range_picker_day_in_range : reachable=false
+@string/m3c_date_range_picker_end_headline : reachable=false
+@string/m3c_date_range_picker_scroll_to_next_month : reachable=false
+@string/m3c_date_range_picker_scroll_to_previous_month : reachable=false
+@string/m3c_date_range_picker_start_headline : reachable=false
+@string/m3c_date_range_picker_title : reachable=false
+@string/m3c_dialog : reachable=true
+@string/m3c_dropdown_menu_collapsed : reachable=false
+@string/m3c_dropdown_menu_expanded : reachable=false
+@string/m3c_dropdown_menu_toggle : reachable=false
+@string/m3c_search_bar_search : reachable=false
+@string/m3c_snackbar_dismiss : reachable=true
+@string/m3c_suggestions_available : reachable=false
+@string/m3c_time_picker_am : reachable=false
+@string/m3c_time_picker_hour : reachable=false
+@string/m3c_time_picker_hour_24h_suffix : reachable=false
+@string/m3c_time_picker_hour_selection : reachable=false
+@string/m3c_time_picker_hour_suffix : reachable=false
+@string/m3c_time_picker_hour_text_field : reachable=false
+@string/m3c_time_picker_minute : reachable=false
+@string/m3c_time_picker_minute_selection : reachable=false
+@string/m3c_time_picker_minute_suffix : reachable=false
+@string/m3c_time_picker_minute_text_field : reachable=false
+@string/m3c_time_picker_period_toggle_description : reachable=false
+@string/m3c_time_picker_pm : reachable=false
+@string/m3c_tooltip_long_press_label : reachable=false
+@string/m3c_tooltip_pane_description : reachable=false
+@string/minutes : reachable=false
+@string/nav_analytics : reachable=true
+@string/nav_home : reachable=true
+@string/nav_practice : reachable=true
+@string/nav_review : reachable=true
+@string/nav_tests : reachable=true
+@string/navigation_menu : reachable=false
+@string/no_value : reachable=false
+@string/not_enough_data : reachable=false
+@string/not_selected : reachable=true
+@string/ok : reachable=true
+@string/onboarding_daily_goal_label : reachable=true
+@string/onboarding_exams_label : reachable=true
+@string/onboarding_get_started : reachable=true
+@string/onboarding_minutes_per_day : reachable=true
+@string/onboarding_name_hint : reachable=true
+@string/onboarding_name_label : reachable=true
+@string/onboarding_questions_per_day : reachable=true
+@string/onboarding_skip : reachable=true
+@string/onboarding_subtitle : reachable=true
+@string/onboarding_welcome : reachable=true
+@string/percentage_format : reachable=false
+@string/privacy_badge_100_offline : reachable=true
+@string/privacy_byok_ai_desc : reachable=true
+@string/privacy_byok_ai_title : reachable=true
+@string/privacy_hero_desc : reachable=true
+@string/privacy_no_tracking_desc : reachable=true
+@string/privacy_no_tracking_title : reachable=true
+@string/privacy_ownership_desc : reachable=true
+@string/privacy_ownership_title : reachable=true
+@string/privacy_sandbox_desc : reachable=true
+@string/privacy_sandbox_title : reachable=true
+@string/privacy_screen_title : reachable=true
+@string/profile : reachable=true
+@string/profile_daily_goal : reachable=true
+@string/profile_edit : reachable=true
+@string/profile_minutes_goal : reachable=true
+@string/profile_name : reachable=true
+@string/profile_prep_start_date : reachable=false
+@string/profile_questions_goal : reachable=true
+@string/profile_save : reachable=true
+@string/profile_saved : reachable=false
+@string/profile_target_exam_date : reachable=false
+@string/profile_target_exams : reachable=true
+@string/questions : reachable=false
+@string/range_end : reachable=false
+@string/range_start : reachable=false
+@string/retry : reachable=false
+@string/save : reachable=true
+@string/search : reachable=false
+@string/selected : reachable=true
+@string/settings : reachable=true
+@string/settings_about : reachable=false
+@string/settings_about_desc : reachable=false
+@string/settings_ai : reachable=true
+@string/settings_backup : reachable=true
+@string/settings_backup_desc : reachable=true
+@string/settings_data : reachable=true
+@string/settings_data_desc : reachable=true
+@string/settings_haptic_feedback : reachable=true
+@string/settings_haptic_feedback_desc : reachable=true
+@string/settings_privacy : reachable=true
+@string/settings_privacy_desc : reachable=true
+@string/settings_section_about : reachable=true
+@string/settings_section_appearance : reachable=true
+@string/settings_section_data : reachable=true
+@string/settings_section_preferences : reachable=true
+@string/settings_section_privacy : reachable=true
+@string/settings_sound_effects : reachable=true
+@string/settings_sound_effects_desc : reachable=true
+@string/settings_theme : reachable=true
+@string/settings_theme_dark : reachable=true
+@string/settings_theme_light : reachable=true
+@string/settings_theme_system : reachable=true
+@string/snackbar_pane_title : reachable=false
+@string/state_empty : reachable=true
+@string/state_off : reachable=true
+@string/state_on : reachable=true
+@string/status_bar_notification_info_overflow : reachable=false
+@string/switch_role : reachable=true
+@string/tab : reachable=true
+@string/tab_bookmarks : reachable=true
+@string/tab_mistakes : reachable=true
+@string/tab_revision : reachable=true
+@string/template_percent : reachable=true
+@string/tooltip_description : reachable=false
+@string/tooltip_label : reachable=false
+@style/DialogWindowTheme : reachable=true
+@style/EdgeToEdgeFloatingDialogTheme : reachable=false
+    @integer/m3c_window_layout_in_display_cutout_mode
+@style/EdgeToEdgeFloatingDialogWindowTheme : reachable=true
+    @style/EdgeToEdgeFloatingDialogTheme
+@style/FloatingDialogTheme : reachable=false
+@style/FloatingDialogWindowTheme : reachable=true
+    @style/FloatingDialogTheme
+@style/TextAppearance_Compat_Notification : reachable=false
+@style/TextAppearance_Compat_Notification_Info : reachable=false
+@style/TextAppearance_Compat_Notification_Line2 : reachable=false
+    @style/TextAppearance_Compat_Notification_Info
+@style/TextAppearance_Compat_Notification_Time : reachable=false
+@style/TextAppearance_Compat_Notification_Title : reachable=false
+@style/Theme_AptiVilla : reachable=true
+@style/Widget_Compat_NotificationActionContainer : reachable=false
+    @drawable/notification_action_background
+@style/Widget_Compat_NotificationActionText : reachable=false
+    @dimen/notification_action_text_size
+    @color/androidx_core_secondary_text_default_material_light
+@xml/data_extraction_rules : reachable=true
+
+The root reachable resources are:
+ id:accessibility_action_clickable_span:2131165184
+ id:accessibility_custom_action_0:2131165185
+ id:accessibility_custom_action_1:2131165186
+ id:accessibility_custom_action_10:2131165187
+ id:accessibility_custom_action_11:2131165188
+ id:accessibility_custom_action_12:2131165189
+ id:accessibility_custom_action_13:2131165190
+ id:accessibility_custom_action_14:2131165191
+ id:accessibility_custom_action_15:2131165192
+ id:accessibility_custom_action_16:2131165193
+ id:accessibility_custom_action_17:2131165194
+ id:accessibility_custom_action_18:2131165195
+ id:accessibility_custom_action_19:2131165196
+ id:accessibility_custom_action_2:2131165197
+ id:accessibility_custom_action_20:2131165198
+ id:accessibility_custom_action_21:2131165199
+ id:accessibility_custom_action_22:2131165200
+ id:accessibility_custom_action_23:2131165201
+ id:accessibility_custom_action_24:2131165202
+ id:accessibility_custom_action_25:2131165203
+ id:accessibility_custom_action_26:2131165204
+ id:accessibility_custom_action_27:2131165205
+ id:accessibility_custom_action_28:2131165206
+ id:accessibility_custom_action_29:2131165207
+ id:accessibility_custom_action_3:2131165208
+ id:accessibility_custom_action_30:2131165209
+ id:accessibility_custom_action_31:2131165210
+ id:accessibility_custom_action_4:2131165211
+ id:accessibility_custom_action_5:2131165212
+ id:accessibility_custom_action_6:2131165213
+ id:accessibility_custom_action_7:2131165214
+ id:accessibility_custom_action_8:2131165215
+ id:accessibility_custom_action_9:2131165216
+ id:androidx_compose_ui_view_composition_context:2131165222
+ id:compose_view_saveable_id_tag:2131165226
+ id:consume_window_insets_tag:2131165227
+ id:hide_graphics_layer_in_inspector_tag:2131165232
+ id:hide_in_inspector_tag:2131165234
+ id:inspection_slot_table_set:2131165238
+ id:is_pooling_container_tag:2131165239
+ id:pooling_container_listener_holder_tag:2131165249
+ id:report_drawn:2131165250
+ id:tag_accessibility_actions:2131165254
+ id:tag_accessibility_clickable_spans:2131165255
+ id:tag_accessibility_heading:2131165256
+ id:tag_accessibility_pane_title:2131165257
+ id:tag_compat_insets_dispatch:2131165258
+ id:tag_on_apply_window_listener:2131165259
+ id:tag_screen_reader_focusable:2131165262
+ id:tag_state_description:2131165263
+ id:tag_unhandled_key_event_manager:2131165266
+ id:tag_unhandled_key_listeners:2131165267
+ id:tag_window_insets_animation_callback:2131165268
+ id:view_tree_disjoint_parent:2131165273
+ id:view_tree_lifecycle_owner:2131165274
+ id:view_tree_on_back_pressed_dispatcher_owner:2131165275
+ id:view_tree_saved_state_registry_owner:2131165276
+ id:view_tree_view_model_store_owner:2131165277
+ id:wrapped_composition_tag:2131165279
+ mipmap:ic_launcher:2131361792
+ mipmap:ic_launcher_round:2131361793
+ string:ai_api_key_hint:2131427328
+ string:ai_api_key_label:2131427329
+ string:ai_chat_configure_btn:2131427330
+ string:ai_chat_empty_title:2131427331
+ string:ai_chat_no_key_warning:2131427332
+ string:ai_chat_preview_btn:2131427333
+ string:ai_chat_preview_desc:2131427334
+ string:ai_chat_preview_title:2131427335
+ string:ai_chat_quick_prompt_beginner:2131427336
+ string:ai_chat_quick_prompt_hint:2131427337
+ string:ai_chat_quick_prompt_shortcut:2131427338
+ string:ai_chat_quick_prompt_step:2131427339
+ string:ai_chat_quick_prompt_wrong:2131427340
+ string:ai_chat_title:2131427341
+ string:ai_delete_key_btn:2131427343
+ string:ai_disclosure_text:2131427344
+ string:ai_disclosure_title:2131427345
+ string:ai_endpoint_label:2131427346
+ string:ai_history_empty:2131427347
+ string:ai_history_section:2131427348
+ string:ai_history_title:2131427349
+ string:ai_key_valid:2131427351
+ string:ai_model_label:2131427352
+ string:ai_provider_label:2131427353
+ string:ai_save_history_desc:2131427354
+ string:ai_save_history_title:2131427355
+ string:ai_settings_desc:2131427357
+ string:ai_settings_title:2131427358
+ string:ai_test_key_btn:2131427359
+ string:ai_view_history_btn:2131427360
+ string:androidx_startup:2131427361
+ string:app_name:2131427362
+ string:autofill:2131427363
+ string:backup_export_full_btn:2131427365
+ string:backup_export_full_desc:2131427366
+ string:backup_export_full_title:2131427367
+ string:backup_export_json_desc:2131427368
+ string:backup_export_json_title:2131427369
+ string:backup_export_questions_btn:2131427370
+ string:backup_export_section:2131427371
+ string:backup_export_tests_btn:2131427373
+ string:backup_import_desc:2131427374
+ string:backup_import_section:2131427375
+ string:backup_mode_merge_desc:2131427376
+ string:backup_mode_merge_title:2131427377
+ string:backup_mode_replace_desc:2131427378
+ string:backup_mode_replace_title:2131427379
+ string:backup_preview_dialog_title:2131427381
+ string:backup_restore_action_btn:2131427383
+ string:backup_screen_title:2131427385
+ string:backup_select_file_btn:2131427386
+ string:cancel:2131427394
+ string:cd_navigate_back:2131427397
+ string:cd_profile:2131427398
+ string:cd_search:2131427399
+ string:cd_settings:2131427400
+ string:close_sheet:2131427402
+ string:confirm:2131427403
+ string:data_clear_history_btn:2131427406
+ string:data_clear_history_desc:2131427407
+ string:data_clear_history_title:2131427408
+ string:data_clear_mistakes_btn:2131427409
+ string:data_clear_mistakes_desc:2131427410
+ string:data_clear_mistakes_title:2131427411
+ string:data_confirm_wipe_message:2131427413
+ string:data_confirm_wipe_title:2131427414
+ string:data_screen_title:2131427415
+ string:data_wipe_btn:2131427416
+ string:data_wipe_desc:2131427417
+ string:data_wipe_title:2131427418
+ string:default_error_message:2131427419
+ string:default_popup_window_title:2131427420
+ string:delete:2131427421
+ string:in_progress:2131427441
+ string:indeterminate:2131427442
+ string:m3c_bottom_sheet_collapse_description:2131427444
+ string:m3c_bottom_sheet_dismiss_description:2131427445
+ string:m3c_bottom_sheet_drag_handle_description:2131427446
+ string:m3c_bottom_sheet_expand_description:2131427447
+ string:m3c_bottom_sheet_pane_title:2131427448
+ string:m3c_dialog:2131427480
+ string:m3c_snackbar_dismiss:2131427485
+ string:nav_analytics:2131427502
+ string:nav_home:2131427503
+ string:nav_practice:2131427504
+ string:nav_review:2131427505
+ string:nav_tests:2131427506
+ string:not_selected:2131427510
+ string:ok:2131427511
+ string:onboarding_daily_goal_label:2131427512
+ string:onboarding_exams_label:2131427513
+ string:onboarding_get_started:2131427514
+ string:onboarding_minutes_per_day:2131427515
+ string:onboarding_name_hint:2131427516
+ string:onboarding_name_label:2131427517
+ string:onboarding_questions_per_day:2131427518
+ string:onboarding_skip:2131427519
+ string:onboarding_subtitle:2131427520
+ string:onboarding_welcome:2131427521
+ string:privacy_badge_100_offline:2131427523
+ string:privacy_byok_ai_desc:2131427524
+ string:privacy_byok_ai_title:2131427525
+ string:privacy_hero_desc:2131427526
+ string:privacy_no_tracking_desc:2131427527
+ string:privacy_no_tracking_title:2131427528
+ string:privacy_ownership_desc:2131427529
+ string:privacy_ownership_title:2131427530
+ string:privacy_sandbox_desc:2131427531
+ string:privacy_sandbox_title:2131427532
+ string:privacy_screen_title:2131427533
+ string:profile:2131427534
+ string:profile_daily_goal:2131427535
+ string:profile_edit:2131427536
+ string:profile_minutes_goal:2131427537
+ string:profile_name:2131427538
+ string:profile_questions_goal:2131427540
+ string:profile_save:2131427541
+ string:profile_target_exams:2131427544
+ string:save:2131427549
+ string:selected:2131427551
+ string:settings:2131427552
+ string:settings_ai:2131427555
+ string:settings_backup:2131427556
+ string:settings_backup_desc:2131427557
+ string:settings_data:2131427558
+ string:settings_data_desc:2131427559
+ string:settings_haptic_feedback:2131427560
+ string:settings_haptic_feedback_desc:2131427561
+ string:settings_privacy:2131427562
+ string:settings_privacy_desc:2131427563
+ string:settings_section_about:2131427564
+ string:settings_section_appearance:2131427565
+ string:settings_section_data:2131427566
+ string:settings_section_preferences:2131427567
+ string:settings_section_privacy:2131427568
+ string:settings_sound_effects:2131427569
+ string:settings_sound_effects_desc:2131427570
+ string:settings_theme:2131427571
+ string:settings_theme_dark:2131427572
+ string:settings_theme_light:2131427573
+ string:settings_theme_system:2131427574
+ string:state_empty:2131427576
+ string:state_off:2131427577
+ string:state_on:2131427578
+ string:switch_role:2131427580
+ string:tab:2131427581
+ string:tab_bookmarks:2131427582
+ string:tab_mistakes:2131427583
+ string:tab_revision:2131427584
+ string:template_percent:2131427585
+ style:DialogWindowTheme:2131492864
+ style:EdgeToEdgeFloatingDialogWindowTheme:2131492866
+ style:FloatingDialogWindowTheme:2131492868
+ style:Theme_AptiVilla:2131492874
+ xml:data_extraction_rules:2131623936
+Unused resources are: 
+ anim:fragment_fast_out_extra_slow_in:2130771968
+ animator:fragment_close_enter:2130837504
+ animator:fragment_close_exit:2130837505
+ animator:fragment_fade_enter:2130837506
+ animator:fragment_fade_exit:2130837507
+ animator:fragment_open_enter:2130837508
+ animator:fragment_open_exit:2130837509
+ color:androidx_core_ripple_material_light:2130968576
+ color:androidx_core_secondary_text_default_material_light:2130968577
+ color:call_notification_answer_color:2130968578
+ color:call_notification_decline_color:2130968579
+ color:notification_action_color_filter:2130968580
+ color:notification_icon_bg_color:2130968581
+ color:vector_tint_color:2130968582
+ color:vector_tint_theme_color:2130968583
+ dimen:compat_button_inset_horizontal_material:2131034112
+ dimen:compat_button_inset_vertical_material:2131034113
+ dimen:compat_button_padding_horizontal_material:2131034114
+ dimen:compat_button_padding_vertical_material:2131034115
+ dimen:compat_control_corner_material:2131034116
+ dimen:compat_notification_large_icon_max_height:2131034117
+ dimen:compat_notification_large_icon_max_width:2131034118
+ dimen:fastscroll_default_thickness:2131034119
+ dimen:fastscroll_margin:2131034120
+ dimen:fastscroll_minimum_range:2131034121
+ dimen:item_touch_helper_max_drag_scroll_per_frame:2131034122
+ dimen:item_touch_helper_swipe_escape_max_velocity:2131034123
+ dimen:item_touch_helper_swipe_escape_velocity:2131034124
+ dimen:notification_action_icon_size:2131034125
+ dimen:notification_action_text_size:2131034126
+ dimen:notification_big_circle_margin:2131034127
+ dimen:notification_content_margin_start:2131034128
+ dimen:notification_large_icon_height:2131034129
+ dimen:notification_large_icon_width:2131034130
+ dimen:notification_main_column_padding_top:2131034131
+ dimen:notification_media_narrow_margin:2131034132
+ dimen:notification_right_icon_size:2131034133
+ dimen:notification_right_side_padding_top:2131034134
+ dimen:notification_small_icon_background_padding:2131034135
+ dimen:notification_small_icon_size_as_large:2131034136
+ dimen:notification_subtext_size:2131034137
+ dimen:notification_top_pad:2131034138
+ dimen:notification_top_pad_large_text:2131034139
+ drawable:ic_call_answer:2131099648
+ drawable:ic_call_answer_low:2131099649
+ drawable:ic_call_answer_video:2131099650
+ drawable:ic_call_answer_video_low:2131099651
+ drawable:ic_call_decline:2131099652
+ drawable:ic_call_decline_low:2131099653
+ drawable:notification_action_background:2131099656
+ drawable:notification_bg:2131099657
+ drawable:notification_bg_low:2131099658
+ drawable:notification_bg_low_normal:2131099659
+ drawable:notification_bg_low_pressed:2131099660
+ drawable:notification_bg_normal:2131099661
+ drawable:notification_bg_normal_pressed:2131099662
+ drawable:notification_icon_background:2131099663
+ drawable:notification_oversize_large_icon_bg:2131099664
+ drawable:notification_template_icon_bg:2131099665
+ drawable:notification_template_icon_low_bg:2131099666
+ drawable:notification_tile_bg:2131099667
+ drawable:notify_panel_notification_icon_bg:2131099668
+ id:action_container:2131165217
+ id:action_divider:2131165218
+ id:action_image:2131165219
+ id:action_text:2131165220
+ id:actions:2131165221
+ id:async:2131165223
+ id:blocking:2131165224
+ id:chronometer:2131165225
+ id:dialog_button:2131165228
+ id:edit_text_id:2131165229
+ id:forever:2131165230
+ id:fragment_container_view_tag:2131165231
+ id:hide_ime_id:2131165233
+ id:icon:2131165235
+ id:icon_group:2131165236
+ id:info:2131165237
+ id:italic:2131165240
+ id:item_touch_helper_previous_elevation:2131165241
+ id:line1:2131165242
+ id:line3:2131165243
+ id:nav_controller_view_tag:2131165244
+ id:normal:2131165245
+ id:notification_background:2131165246
+ id:notification_main_column:2131165247
+ id:notification_main_column_container:2131165248
+ id:right_icon:2131165251
+ id:right_side:2131165252
+ id:special_effects_controller_view_tag:2131165253
+ id:tag_on_receive_content_listener:2131165260
+ id:tag_on_receive_content_mime_types:2131165261
+ id:tag_system_bar_state_monitor:2131165264
+ id:tag_transition_group:2131165265
+ id:text:2131165269
+ id:text2:2131165270
+ id:time:2131165271
+ id:title:2131165272
+ id:visible_removing_fragment_view_tag:2131165278
+ integer:status_bar_notification_info_maxnum:2131230721
+ layout:custom_dialog:2131296256
+ layout:ime_base_split_test_activity:2131296257
+ layout:ime_secondary_split_test_activity:2131296258
+ layout:notification_action:2131296259
+ layout:notification_action_tombstone:2131296260
+ layout:notification_template_custom_big:2131296261
+ layout:notification_template_icon_group:2131296262
+ layout:notification_template_part_chronometer:2131296263
+ layout:notification_template_part_time:2131296264
+ string:ai_clear_history_btn:2131427342
+ string:ai_key_invalid:2131427350
+ string:ai_save_key_btn:2131427356
+ string:backup_error:2131427364
+ string:backup_export_success:2131427372
+ string:backup_preview_app_ver:2131427380
+ string:backup_preview_schema_ver:2131427382
+ string:backup_restore_success:2131427384
+ string:call_notification_answer_action:2131427387
+ string:call_notification_answer_video_action:2131427388
+ string:call_notification_decline_action:2131427389
+ string:call_notification_hang_up_action:2131427390
+ string:call_notification_incoming_text:2131427391
+ string:call_notification_ongoing_text:2131427392
+ string:call_notification_screening_text:2131427393
+ string:cd_correct_answer:2131427395
+ string:cd_incorrect_answer:2131427396
+ string:close_drawer:2131427401
+ string:data_action_failed:2131427404
+ string:data_action_success:2131427405
+ string:data_confirm_dialog_title:2131427412
+ string:dropdown_menu:2131427422
+ string:empty_state:2131427423
+ string:error:2131427424
+ string:home_accuracy:2131427425
+ string:home_continue_learning:2131427426
+ string:home_greeting_afternoon:2131427427
+ string:home_greeting_evening:2131427428
+ string:home_greeting_morning:2131427429
+ string:home_import_first_test:2131427430
+ string:home_import_hint:2131427431
+ string:home_revision_due:2131427432
+ string:home_revision_questions:2131427433
+ string:home_start_practice:2131427434
+ string:home_streak:2131427435
+ string:home_streak_days:2131427436
+ string:home_study_time:2131427437
+ string:home_today_progress:2131427438
+ string:home_weak_topics:2131427439
+ string:home_whats_json_format:2131427440
+ string:loading:2131427443
+ string:m3c_date_input_headline:2131427449
+ string:m3c_date_input_headline_description:2131427450
+ string:m3c_date_input_invalid_for_pattern:2131427451
+ string:m3c_date_input_invalid_not_allowed:2131427452
+ string:m3c_date_input_invalid_year_range:2131427453
+ string:m3c_date_input_label:2131427454
+ string:m3c_date_input_no_input_description:2131427455
+ string:m3c_date_input_title:2131427456
+ string:m3c_date_picker_headline:2131427457
+ string:m3c_date_picker_headline_description:2131427458
+ string:m3c_date_picker_navigate_to_year_description:2131427459
+ string:m3c_date_picker_no_selection_description:2131427460
+ string:m3c_date_picker_scroll_to_earlier_years:2131427461
+ string:m3c_date_picker_scroll_to_later_years:2131427462
+ string:m3c_date_picker_switch_to_calendar_mode:2131427463
+ string:m3c_date_picker_switch_to_day_selection:2131427464
+ string:m3c_date_picker_switch_to_input_mode:2131427465
+ string:m3c_date_picker_switch_to_next_month:2131427466
+ string:m3c_date_picker_switch_to_previous_month:2131427467
+ string:m3c_date_picker_switch_to_year_selection:2131427468
+ string:m3c_date_picker_title:2131427469
+ string:m3c_date_picker_today_description:2131427470
+ string:m3c_date_picker_year_picker_pane_title:2131427471
+ string:m3c_date_range_input_invalid_range_input:2131427472
+ string:m3c_date_range_input_title:2131427473
+ string:m3c_date_range_picker_day_in_range:2131427474
+ string:m3c_date_range_picker_end_headline:2131427475
+ string:m3c_date_range_picker_scroll_to_next_month:2131427476
+ string:m3c_date_range_picker_scroll_to_previous_month:2131427477
+ string:m3c_date_range_picker_start_headline:2131427478
+ string:m3c_date_range_picker_title:2131427479
+ string:m3c_dropdown_menu_collapsed:2131427481
+ string:m3c_dropdown_menu_expanded:2131427482
+ string:m3c_dropdown_menu_toggle:2131427483
+ string:m3c_search_bar_search:2131427484
+ string:m3c_suggestions_available:2131427486
+ string:m3c_time_picker_am:2131427487
+ string:m3c_time_picker_hour:2131427488
+ string:m3c_time_picker_hour_24h_suffix:2131427489
+ string:m3c_time_picker_hour_selection:2131427490
+ string:m3c_time_picker_hour_suffix:2131427491
+ string:m3c_time_picker_hour_text_field:2131427492
+ string:m3c_time_picker_minute:2131427493
+ string:m3c_time_picker_minute_selection:2131427494
+ string:m3c_time_picker_minute_suffix:2131427495
+ string:m3c_time_picker_minute_text_field:2131427496
+ string:m3c_time_picker_period_toggle_description:2131427497
+ string:m3c_time_picker_pm:2131427498
+ string:m3c_tooltip_long_press_label:2131427499
+ string:m3c_tooltip_pane_description:2131427500
+ string:minutes:2131427501
+ string:navigation_menu:2131427507
+ string:no_value:2131427508
+ string:not_enough_data:2131427509
+ string:percentage_format:2131427522
+ string:profile_prep_start_date:2131427539
+ string:profile_saved:2131427542
+ string:profile_target_exam_date:2131427543
+ string:questions:2131427545
+ string:range_end:2131427546
+ string:range_start:2131427547
+ string:retry:2131427548
+ string:search:2131427550
+ string:settings_about:2131427553
+ string:settings_about_desc:2131427554
+ string:snackbar_pane_title:2131427575
+ string:status_bar_notification_info_overflow:2131427579
+ string:tooltip_description:2131427586
+ string:tooltip_label:2131427587
+ style:TextAppearance_Compat_Notification:2131492869
+ style:TextAppearance_Compat_Notification_Info:2131492870
+ style:TextAppearance_Compat_Notification_Line2:2131492871
+ style:TextAppearance_Compat_Notification_Time:2131492872
+ style:TextAppearance_Compat_Notification_Title:2131492873
+ style:Widget_Compat_NotificationActionContainer:2131492875
+ style:Widget_Compat_NotificationActionText:2131492876

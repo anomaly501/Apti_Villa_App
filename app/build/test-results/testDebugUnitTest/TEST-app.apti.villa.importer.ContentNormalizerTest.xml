@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.apti.villa.importer.ContentNormalizerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-30T05:05:08" hostname="LAPTOP-PSVQO0ND" time="0.006">
+  <properties/>
+  <testcase name="normalizeDifficulty standardizes easy medium hard" classname="app.apti.villa.importer.ContentNormalizerTest" time="0.001"/>
+  <testcase name="collapseWhitespace removes leading trailing and internal extra whitespace" classname="app.apti.villa.importer.ContentNormalizerTest" time="0.0"/>
+  <testcase name="parseTimestamp handles MM SS and HH MM SS" classname="app.apti.villa.importer.ContentNormalizerTest" time="0.001"/>
+  <testcase name="computeContentHash is deterministic and order-independent for options" classname="app.apti.villa.importer.ContentNormalizerTest" time="0.003"/>
+  <testcase name="parseTimestamp throws on invalid seconds" classname="app.apti.villa.importer.ContentNormalizerTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

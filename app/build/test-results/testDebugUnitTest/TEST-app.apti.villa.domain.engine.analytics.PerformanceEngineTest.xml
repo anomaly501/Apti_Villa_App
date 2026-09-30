@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.apti.villa.domain.engine.analytics.PerformanceEngineTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-30T05:05:08" hostname="LAPTOP-PSVQO0ND" time="0.032">
+  <properties/>
+  <testcase name="calculateCoreMetrics computes accuracy, first-attempt accuracy, and median time" classname="app.apti.villa.domain.engine.analytics.PerformanceEngineTest" time="0.011"/>
+  <testcase name="calculateCoreMetrics with empty list returns zeroed metrics without crashing" classname="app.apti.villa.domain.engine.analytics.PerformanceEngineTest" time="0.001"/>
+  <testcase name="calculateCoreMetrics ignores time outliers above 10 minutes" classname="app.apti.villa.domain.engine.analytics.PerformanceEngineTest" time="0.0"/>
+  <testcase name="classifyTopic correctly categorizes NOT_ENOUGH_DATA, WEAK, STRONG, and DEVELOPING" classname="app.apti.villa.domain.engine.analytics.PerformanceEngineTest" time="0.008"/>
+  <testcase name="calculateHintDependency counts categories correctly" classname="app.apti.villa.domain.engine.analytics.PerformanceEngineTest" time="0.003"/>
+  <testcase name="calculateStreak counts consecutive days backwards from today or yesterday" classname="app.apti.villa.domain.engine.analytics.PerformanceEngineTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

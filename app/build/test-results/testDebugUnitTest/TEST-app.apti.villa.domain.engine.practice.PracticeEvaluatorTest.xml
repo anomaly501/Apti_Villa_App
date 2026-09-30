@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.apti.villa.domain.engine.practice.PracticeEvaluatorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-30T05:05:08" hostname="LAPTOP-PSVQO0ND" time="0.011">
+  <properties/>
+  <testcase name="evaluating correct option marks answer answered and computes hint level" classname="app.apti.villa.domain.engine.practice.PracticeEvaluatorTest" time="0.01"/>
+  <testcase name="revealAnswer marks revealed true and sets solvedAtHintLevel to null" classname="app.apti.villa.domain.engine.practice.PracticeEvaluatorTest" time="0.0"/>
+  <testcase name="evaluating wrong option records failure and preserves attempt for retry" classname="app.apti.villa.domain.engine.practice.PracticeEvaluatorTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

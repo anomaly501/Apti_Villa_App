@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "source_metadata": {
+    "title": "Bad Step Numbers",
+    "topic": "Math"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Non-contiguous steps",
+      "options": ["A", "B"],
+      "correct_answer": "A",
+      "solution_steps": [
+        { "step_number": 1, "action": "Step 1" },
+        { "step_number": 4, "action": "Step 4" }
+      ]
+    }
+  ]
+}

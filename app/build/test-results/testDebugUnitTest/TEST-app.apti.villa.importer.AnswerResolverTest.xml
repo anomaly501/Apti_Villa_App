@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.apti.villa.importer.AnswerResolverTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-09-30T05:05:08" hostname="LAPTOP-PSVQO0ND" time="0.026">
+  <properties/>
+  <testcase name="step 3 case-insensitive match matches correctly" classname="app.apti.villa.importer.AnswerResolverTest" time="0.005"/>
+  <testcase name="step 6 no match emits E_ANSWER_NO_MATCH" classname="app.apti.villa.importer.AnswerResolverTest" time="0.007"/>
+  <testcase name="step 5 ambiguous answer emits E_ANSWER_AMBIGUOUS" classname="app.apti.villa.importer.AnswerResolverTest" time="0.003"/>
+  <testcase name="step 4 number mapping maps 1-4 to positions with warning" classname="app.apti.villa.importer.AnswerResolverTest" time="0.008"/>
+  <testcase name="step 4 letter mapping maps A-E to positions with warning" classname="app.apti.villa.importer.AnswerResolverTest" time="0.0"/>
+  <testcase name="step 1 exact match matches correctly" classname="app.apti.villa.importer.AnswerResolverTest" time="0.0"/>
+  <testcase name="step 2 trimmed match handles extra whitespace" classname="app.apti.villa.importer.AnswerResolverTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

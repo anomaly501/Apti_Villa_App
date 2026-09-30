@@ -1,0 +1,15 @@
+{
+  "schema_version": 3,
+  "source_metadata": {
+    "title": "Future Schema",
+    "topic": "Math"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Is schema version 3 valid?",
+      "options": ["Yes", "No"],
+      "correct_answer": "No"
+    }
+  ]
+}

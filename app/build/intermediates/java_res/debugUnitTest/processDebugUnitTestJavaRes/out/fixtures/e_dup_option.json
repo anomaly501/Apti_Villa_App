@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "source_metadata": {
+    "title": "Duplicate Options",
+    "topic": "Math"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Pick the number",
+      "options": ["10", "20", "10"],
+      "correct_answer": "20"
+    }
+  ]
+}

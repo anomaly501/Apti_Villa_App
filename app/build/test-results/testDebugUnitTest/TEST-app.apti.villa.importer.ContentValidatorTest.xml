@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.apti.villa.importer.ContentValidatorTest" tests="22" skipped="0" failures="0" errors="0" timestamp="2026-09-30T05:05:08" hostname="LAPTOP-PSVQO0ND" time="0.227">
+  <properties/>
+  <testcase name="e_hint_numbering fixture emits E_HINT_NUMBERING" classname="app.apti.villa.importer.ContentValidatorTest" time="0.157"/>
+  <testcase name="e_bad_timestamp fixture emits E_BAD_TIMESTAMP" classname="app.apti.villa.importer.ContentValidatorTest" time="0.003"/>
+  <testcase name="e_unsupported_structure fixture emits E_UNSUPPORTED_STRUCTURE" classname="app.apti.villa.importer.ContentValidatorTest" time="0.002"/>
+  <testcase name="e_step_numbering fixture emits E_STEP_NUMBERING" classname="app.apti.villa.importer.ContentValidatorTest" time="0.005"/>
+  <testcase name="e_dup_option fixture emits E_DUP_OPTION" classname="app.apti.villa.importer.ContentValidatorTest" time="0.011"/>
+  <testcase name="e_answer_ambiguous fixture emits E_ANSWER_AMBIGUOUS" classname="app.apti.villa.importer.ContentValidatorTest" time="0.002"/>
+  <testcase name="e_dup_question_id fixture emits E_DUP_QUESTION_ID" classname="app.apti.villa.importer.ContentValidatorTest" time="0.01"/>
+  <testcase name="e_missing_field fixture emits E_MISSING_FIELD" classname="app.apti.villa.importer.ContentValidatorTest" time="0.002"/>
+  <testcase name="w_unknown_field fixture emits W_UNKNOWN_FIELD and passes" classname="app.apti.villa.importer.ContentValidatorTest" time="0.003"/>
+  <testcase name="valid_minimal fixture parses and produces valid plan with no errors" classname="app.apti.villa.importer.ContentValidatorTest" time="0.002"/>
+  <testcase name="w_answer_letter fixture emits W_ANSWER_LETTER_MAPPED and passes" classname="app.apti.villa.importer.ContentValidatorTest" time="0.002"/>
+  <testcase name="e_empty_question_text fixture emits E_EMPTY_QUESTION_TEXT" classname="app.apti.villa.importer.ContentValidatorTest" time="0.002"/>
+  <testcase name="e_options_count fixture emits E_OPTIONS_COUNT" classname="app.apti.villa.importer.ContentValidatorTest" time="0.002"/>
+  <testcase name="valid_full fixture parses all optional fields" classname="app.apti.villa.importer.ContentValidatorTest" time="0.006"/>
+  <testcase name="e_hint_count_mismatch fixture emits E_HINT_COUNT_MISMATCH" classname="app.apti.villa.importer.ContentValidatorTest" time="0.002"/>
+  <testcase name="e_wrong_type fixture emits E_WRONG_TYPE" classname="app.apti.villa.importer.ContentValidatorTest" time="0.002"/>
+  <testcase name="e_empty_option fixture emits E_EMPTY_OPTION" classname="app.apti.villa.importer.ContentValidatorTest" time="0.002"/>
+  <testcase name="hindi_content fixture parses Unicode Devanagari text correctly" classname="app.apti.villa.importer.ContentValidatorTest" time="0.003"/>
+  <testcase name="e_bad_url fixture emits E_BAD_URL" classname="app.apti.villa.importer.ContentValidatorTest" time="0.002"/>
+  <testcase name="e_schema_version fixture emits E_SCHEMA_VERSION" classname="app.apti.villa.importer.ContentValidatorTest" time="0.002"/>
+  <testcase name="e_answer_no_match fixture emits E_ANSWER_NO_MATCH" classname="app.apti.villa.importer.ContentValidatorTest" time="0.002"/>
+  <testcase name="mixed_valid_invalid fixture produces both valid and skipped questions" classname="app.apti.villa.importer.ContentValidatorTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

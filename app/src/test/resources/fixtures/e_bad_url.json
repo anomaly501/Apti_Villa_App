@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "source_metadata": {
+    "title": "Bad URL",
+    "topic": "Math",
+    "source_url": "invalid_url_without_http"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Valid question",
+      "options": ["A", "B"],
+      "correct_answer": "A"
+    }
+  ]
+}

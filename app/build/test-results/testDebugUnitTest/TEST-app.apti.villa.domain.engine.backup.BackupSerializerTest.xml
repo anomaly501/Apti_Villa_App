@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.apti.villa.domain.engine.backup.BackupSerializerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-30T05:05:08" hostname="LAPTOP-PSVQO0ND" time="0.026">
+  <properties/>
+  <testcase name="validateBackup rejects future format version" classname="app.apti.villa.domain.engine.backup.BackupSerializerTest" time="0.01"/>
+  <testcase name="validateBackup rejects payload containing secret credentials or API keys" classname="app.apti.villa.domain.engine.backup.BackupSerializerTest" time="0.008"/>
+  <testcase name="sha256 computes consistent hex digest" classname="app.apti.villa.domain.engine.backup.BackupSerializerTest" time="0.002"/>
+  <testcase name="validateBackup accepts valid payload with matching checksums" classname="app.apti.villa.domain.engine.backup.BackupSerializerTest" time="0.002"/>
+  <testcase name="createManifest calculates checksums for all entries" classname="app.apti.villa.domain.engine.backup.BackupSerializerTest" time="0.003"/>
+  <testcase name="validateBackup rejects corrupted file with checksum mismatch" classname="app.apti.villa.domain.engine.backup.BackupSerializerTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

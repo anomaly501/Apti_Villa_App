@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "source_metadata": {
+    "title": "Bad Timestamp",
+    "topic": "Math"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Timestamp minutes out of bounds",
+      "options": ["A", "B"],
+      "correct_answer": "A",
+      "timestamp": "12:99:00"
+    }
+  ]
+}

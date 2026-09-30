@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "source_metadata": {
+    "title": "Wrong Types",
+    "topic": "Logic"
+  },
+  "questions": [
+    {
+      "id": "1",
+      "question_text": "Is this wrong?",
+      "options": "Not an array",
+      "correct_answer": "Yes"
+    }
+  ]
+}

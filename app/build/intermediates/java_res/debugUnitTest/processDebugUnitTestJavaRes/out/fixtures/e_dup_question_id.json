@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "source_metadata": {
+    "title": "Duplicate IDs",
+    "topic": "Math"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "question_text": "Question one?",
+      "options": ["1", "2"],
+      "correct_answer": "1"
+    },
+    {
+      "id": "Q1",
+      "question_text": "Question two?",
+      "options": ["1", "2"],
+      "correct_answer": "1"
+    }
+  ]
+}

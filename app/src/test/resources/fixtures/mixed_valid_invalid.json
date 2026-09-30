@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "source_metadata": {
+    "title": "Mixed Quiz",
+    "topic": "General"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Valid Question One",
+      "options": ["Option A", "Option B"],
+      "correct_answer": "Option A"
+    },
+    {
+      "id": 2,
+      "question_text": "Invalid Question Missing Answer",
+      "options": ["A", "B"],
+      "correct_answer": "NotAnOption"
+    },
+    {
+      "id": 3,
+      "question_text": "Valid Question Two",
+      "options": ["Cat", "Dog", "Fish"],
+      "correct_answer": "Dog"
+    }
+  ]
+}

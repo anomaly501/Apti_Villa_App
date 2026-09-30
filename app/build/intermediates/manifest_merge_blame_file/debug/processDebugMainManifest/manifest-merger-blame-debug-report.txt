@@ -1,0 +1,208 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="app.apti.villa.debug"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="35" />
+10
+11    <!-- Internet permission for AI only (optional feature) -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:6:5-67
+12-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:6:22-64
+13
+14    <permission
+14-->[androidx.core:core:1.16.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\e6577b6b44f40c8c516377526c30b33a\transformed\core-1.16.0\AndroidManifest.xml:22:5-24:47
+15        android:name="app.apti.villa.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+15-->[androidx.core:core:1.16.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\e6577b6b44f40c8c516377526c30b33a\transformed\core-1.16.0\AndroidManifest.xml:23:9-81
+16        android:protectionLevel="signature" />
+16-->[androidx.core:core:1.16.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\e6577b6b44f40c8c516377526c30b33a\transformed\core-1.16.0\AndroidManifest.xml:24:9-44
+17
+18    <uses-permission android:name="app.apti.villa.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+18-->[androidx.core:core:1.16.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\e6577b6b44f40c8c516377526c30b33a\transformed\core-1.16.0\AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.16.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\e6577b6b44f40c8c516377526c30b33a\transformed\core-1.16.0\AndroidManifest.xml:26:22-94
+19
+20    <application
+20-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:8:5-46:19
+21        android:name="app.apti.villa.AptiVillaApp"
+21-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:9:9-37
+22        android:allowBackup="false"
+22-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:10:9-36
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.16.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\e6577b6b44f40c8c516377526c30b33a\transformed\core-1.16.0\AndroidManifest.xml:28:18-86
+24        android:dataExtractionRules="@xml/data_extraction_rules"
+24-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:11:9-65
+25        android:debuggable="true"
+26        android:extractNativeLibs="false"
+27        android:fullBackupContent="false"
+27-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:12:9-42
+28        android:icon="@mipmap/ic_launcher"
+28-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:13:9-43
+29        android:label="@string/app_name"
+29-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:14:9-41
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:15:9-54
+31        android:supportsRtl="true"
+31-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:16:9-35
+32        android:testOnly="true"
+33        android:theme="@style/Theme.AptiVilla" >
+33-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:17:9-47
+34        <activity
+34-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:20:9-45:20
+35            android:name="app.apti.villa.MainActivity"
+35-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:21:13-41
+36            android:exported="true"
+36-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:22:13-36
+37            android:theme="@style/Theme.AptiVilla" >
+37-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:23:13-51
+38            <intent-filter>
+38-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:24:13-27:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:25:17-69
+39-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:25:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:26:17-77
+41-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:26:27-74
+42            </intent-filter>
+43
+44            <!-- Share intent for JSON files -->
+45            <intent-filter>
+45-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:30:13-34:29
+46                <action android:name="android.intent.action.SEND" />
+46-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:31:17-69
+46-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:31:25-66
+47
+48                <category android:name="android.intent.category.DEFAULT" />
+48-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:32:17-76
+48-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:32:27-73
+49
+50                <data android:mimeType="application/json" />
+50-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:33:17-61
+50-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:33:23-58
+51            </intent-filter>
+52            <intent-filter>
+52-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:35:13-39:29
+53                <action android:name="android.intent.action.SEND" />
+53-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:31:17-69
+53-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:31:25-66
+54
+55                <category android:name="android.intent.category.DEFAULT" />
+55-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:32:17-76
+55-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:32:27-73
+56
+57                <data android:mimeType="text/plain" />
+57-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:33:17-61
+57-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:33:23-58
+58            </intent-filter>
+59            <intent-filter>
+59-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:40:13-44:29
+60                <action android:name="android.intent.action.VIEW" />
+60-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:41:17-69
+60-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:41:25-66
+61
+62                <category android:name="android.intent.category.DEFAULT" />
+62-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:32:17-76
+62-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:32:27-73
+63
+64                <data android:mimeType="application/json" />
+64-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:33:17-61
+64-->D:\Apti Villa\andro pro\app\src\main\AndroidManifest.xml:33:23-58
+65            </intent-filter>
+66        </activity>
+67
+68        <service
+68-->[androidx.room:room-runtime-android:2.7.1] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\fa52be952fecbad1377a80eb8c3d5f7b\transformed\room-runtime-release\AndroidManifest.xml:24:9-28:63
+69            android:name="androidx.room.MultiInstanceInvalidationService"
+69-->[androidx.room:room-runtime-android:2.7.1] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\fa52be952fecbad1377a80eb8c3d5f7b\transformed\room-runtime-release\AndroidManifest.xml:25:13-74
+70            android:directBootAware="true"
+70-->[androidx.room:room-runtime-android:2.7.1] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\fa52be952fecbad1377a80eb8c3d5f7b\transformed\room-runtime-release\AndroidManifest.xml:26:13-43
+71            android:exported="false" />
+71-->[androidx.room:room-runtime-android:2.7.1] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\fa52be952fecbad1377a80eb8c3d5f7b\transformed\room-runtime-release\AndroidManifest.xml:27:13-37
+72
+73        <activity
+73-->[androidx.compose.ui:ui-tooling-android:1.8.2] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\2e09887b58d0d0ade964ad8e2d46ca67\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+74            android:name="androidx.compose.ui.tooling.PreviewActivity"
+74-->[androidx.compose.ui:ui-tooling-android:1.8.2] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\2e09887b58d0d0ade964ad8e2d46ca67\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+75            android:exported="true" />
+75-->[androidx.compose.ui:ui-tooling-android:1.8.2] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\2e09887b58d0d0ade964ad8e2d46ca67\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+76
+77        <provider
+77-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\9b12535748e1e6b54c32455edf7aee32\transformed\emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
+78            android:name="androidx.startup.InitializationProvider"
+78-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\9b12535748e1e6b54c32455edf7aee32\transformed\emoji2-1.4.0\AndroidManifest.xml:25:13-67
+79            android:authorities="app.apti.villa.debug.androidx-startup"
+79-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\9b12535748e1e6b54c32455edf7aee32\transformed\emoji2-1.4.0\AndroidManifest.xml:26:13-68
+80            android:exported="false" >
+80-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\9b12535748e1e6b54c32455edf7aee32\transformed\emoji2-1.4.0\AndroidManifest.xml:27:13-37
+81            <meta-data
+81-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\9b12535748e1e6b54c32455edf7aee32\transformed\emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
+82                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+82-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\9b12535748e1e6b54c32455edf7aee32\transformed\emoji2-1.4.0\AndroidManifest.xml:30:17-75
+83                android:value="androidx.startup" />
+83-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\9b12535748e1e6b54c32455edf7aee32\transformed\emoji2-1.4.0\AndroidManifest.xml:31:17-49
+84            <meta-data
+84-->[androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\f4ad37ae8c0806dea62bc96ba83bc1a2\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:29:13-31:52
+85                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+85-->[androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\f4ad37ae8c0806dea62bc96ba83bc1a2\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:30:17-78
+86                android:value="androidx.startup" />
+86-->[androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\f4ad37ae8c0806dea62bc96ba83bc1a2\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:31:17-49
+87            <meta-data
+87-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\cc08a10d22cc0844cc742243b2f665f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+88                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+88-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\cc08a10d22cc0844cc742243b2f665f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+89                android:value="androidx.startup" />
+89-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\cc08a10d22cc0844cc742243b2f665f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+90        </provider>
+91
+92        <activity
+92-->[androidx.compose.ui:ui-test-manifest:1.8.2] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\ab48c53fea61a1440350f18eeef71d91\transformed\ui-test-manifest-1.8.2\AndroidManifest.xml:23:9-26:79
+93            android:name="androidx.activity.ComponentActivity"
+93-->[androidx.compose.ui:ui-test-manifest:1.8.2] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\ab48c53fea61a1440350f18eeef71d91\transformed\ui-test-manifest-1.8.2\AndroidManifest.xml:24:13-63
+94            android:exported="true"
+94-->[androidx.compose.ui:ui-test-manifest:1.8.2] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\ab48c53fea61a1440350f18eeef71d91\transformed\ui-test-manifest-1.8.2\AndroidManifest.xml:25:13-36
+95            android:theme="@android:style/Theme.Material.Light.NoActionBar" />
+95-->[androidx.compose.ui:ui-test-manifest:1.8.2] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\ab48c53fea61a1440350f18eeef71d91\transformed\ui-test-manifest-1.8.2\AndroidManifest.xml:26:13-76
+96
+97        <receiver
+97-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\cc08a10d22cc0844cc742243b2f665f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+98            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+98-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\cc08a10d22cc0844cc742243b2f665f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+99            android:directBootAware="false"
+99-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\cc08a10d22cc0844cc742243b2f665f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+100            android:enabled="true"
+100-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\cc08a10d22cc0844cc742243b2f665f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+101            android:exported="true"
+101-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\cc08a10d22cc0844cc742243b2f665f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+102            android:permission="android.permission.DUMP" >
+102-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\cc08a10d22cc0844cc742243b2f665f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+103            <intent-filter>
+103-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\cc08a10d22cc0844cc742243b2f665f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+104                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+104-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\cc08a10d22cc0844cc742243b2f665f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+104-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\cc08a10d22cc0844cc742243b2f665f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+105            </intent-filter>
+106            <intent-filter>
+106-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\cc08a10d22cc0844cc742243b2f665f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+107                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+107-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\cc08a10d22cc0844cc742243b2f665f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+107-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\cc08a10d22cc0844cc742243b2f665f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+108            </intent-filter>
+109            <intent-filter>
+109-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\cc08a10d22cc0844cc742243b2f665f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+110                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+110-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\cc08a10d22cc0844cc742243b2f665f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+110-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\cc08a10d22cc0844cc742243b2f665f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+111            </intent-filter>
+112            <intent-filter>
+112-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\cc08a10d22cc0844cc742243b2f665f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+113                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+113-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\cc08a10d22cc0844cc742243b2f665f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+113-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Aman Kumar\.gradle\caches\8.14.5\transforms\cc08a10d22cc0844cc742243b2f665f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+114            </intent-filter>
+115        </receiver>
+116    </application>
+117
+118</manifest>

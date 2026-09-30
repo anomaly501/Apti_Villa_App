@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.apti.villa.architecture.ArchitectureTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-30T05:05:05" hostname="LAPTOP-PSVQO0ND" time="2.232">
+  <properties/>
+  <testcase name="domain layer does not depend on android, room, okhttp, or hilt" classname="app.apti.villa.architecture.ArchitectureTest" time="2.131"/>
+  <testcase name="feature layer does not depend directly on room entities" classname="app.apti.villa.architecture.ArchitectureTest" time="0.052"/>
+  <testcase name="network classes are not imported outside ai or core common" classname="app.apti.villa.architecture.ArchitectureTest" time="0.037"/>
+  <testcase name="data local does not depend on feature or ai" classname="app.apti.villa.architecture.ArchitectureTest" time="0.011"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
